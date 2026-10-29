@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spelling Bee · Spell Buddy</title>
+  <link rel="icon" href="assets/bee.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/practice.css">
+  <link rel="stylesheet" href="css/bee.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/icons.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+<main class="container">
+
+  <section id="loading" class="card" aria-busy="true">
+    <span class="skeleton block"></span>
+    <span class="skeleton line"></span>
+    <span class="skeleton line"></span>
+  </section>
+
+  <section id="ready" class="card" hidden>
+    <h1 class="with-ico">
+      <span class="h-badge c-yellow" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#trophy"/></svg></span>
+      <span id="readyTitle">Spelling Bee</span>
+    </h1>
+    <p id="readyInfo" class="muted"></p>
+    <h2>The rules</h2>
+    <ul id="rulesList" class="rules"></ul>
+    <p class="muted">You can change these rules in <a href="settings.html">Settings</a>.</p>
+    <p id="speechWarning" class="warn" hidden>This browser cannot speak words aloud. Try Chrome, Edge or Safari.</p>
+    <button id="beginBtn" class="btn primary big" type="button">
+      <svg class="icon fill" aria-hidden="true" focusable="false"><use href="assets/icons.svg#play"/></svg>
+      <span>Begin</span>
+    </button>
+  </section>
+
+  <section id="play" class="card" hidden>
+    <div class="session-top">
+      <a class="back" href="index.html">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#arrow-left"/></svg>
+        <span>Home</span>
+      </a>
+      <span id="progress" class="pill"></span>
+    </div>
+    <div id="progressTrack" class="bar purple" role="progressbar" aria-label="Round progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <span id="barFill" class="bar-fill"></span>
+    </div>
+    <p id="scoreboard" class="scoreboard" hidden></p>
+    <div id="timerBox" class="timer" hidden>
+      <div id="timerBar" class="timer-bar"></div>
+      <span id="timerText" class="timer-text"></span>
+    </div>
+
+    <button id="hearBtn" class="btn accent big" type="button">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#volume"/></svg>
+      <span>Hear the word again</span>
+    </button>
+    <div class="helpers">
+      <button id="meaningBtn" class="btn small" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#book"/></svg><span>Meaning</span></button>
+      <button id="sentenceBtn" class="btn small" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#message"/></svg><span>Sentence</span></button>
+      <button id="originBtn" class="btn small" type="button" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#globe"/></svg><span>Origin</span></button>
+    </div>
+    <p id="aidText" class="aid" hidden></p>
+
+    <label for="answer" class="muted">Spell the word you heard</label>
+    <input id="answer" class="answer" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+    <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+    <p id="compLine" class="comp-line" role="status" aria-live="polite" hidden></p>
+    <button id="actionBtn" class="btn primary big" type="button">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#check"/></svg>
+      <span>Submit</span>
+    </button>
+  </section>
+
+  <section id="done" class="card center" hidden>
+    <img class="mascot bob" src="assets/bee.svg" width="90" height="97" alt="">
+    <h2 id="doneTitle">Round complete</h2>
+    <p id="scoreText" class="score"></p>
+    <p id="matchResult" class="match-result" hidden></p>
+    <div id="missedBox" hidden>
+      <h2>Words to practise</h2>
+      <ul id="missedList" class="missed"></ul>
+    </div>
+    <a id="playAgain" class="btn primary big" href="bee.html">Play again</a>
+    <a class="btn big ghost" href="index.html">Home</a>
+  </section>
+
+  <section id="error" class="card" hidden>
+    <p id="errorMsg"></p>
+    <a class="btn primary" href="index.html">Back home</a>
+  </section>
+
+</main>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/bee.js"></script>
+</body>
+</html>

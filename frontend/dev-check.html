@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Word bank check · Spell Buddy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dev.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+<main class="container">
+  <section class="card">
+    <h1>Word bank check</h1>
+    <p class="muted">For the owner only. Not linked from the site.</p>
+    <p id="summary" class="feedback"></p>
+    <ul id="results" class="check-list"></ul>
+  </section>
+  <section class="card">
+    <h2>Review every word</h2>
+    <p class="muted">Compare each row with a trusted dictionary.</p>
+    <div class="table-wrap">
+      <table class="words-table">
+        <thead><tr><th>Word</th><th>Level</th><th>Syllables</th><th>Part of speech</th><th>Meaning</th><th>Sentence</th><th>Origin</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/dev-check.js"></script>
+</body>
+</html>

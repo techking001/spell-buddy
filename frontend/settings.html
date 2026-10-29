@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings · Spell Buddy</title>
+  <link rel="icon" href="assets/bee.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/bee.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/icons.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+<main class="container">
+  <h1 class="with-ico">
+    <span class="h-badge c-purple" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#sliders"/></svg></span>
+    <span>Settings</span>
+  </h1>
+
+  <form id="form">
+    <section class="card">
+      <h2 class="with-ico">
+        <span class="h-badge c-blue" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#volume"/></svg></span>
+        <span>Voice and pronunciation</span>
+      </h2>
+      <p id="speechWarning" class="warn" hidden>This browser cannot speak words aloud, so voice settings are unavailable.</p>
+      <label class="field" for="voice">Voice</label>
+      <select id="voice" class="select-input"><option value="">Automatic</option></select>
+
+      <label class="field" for="rate">Speaking speed: <output id="rateOut">0.85×</output></label>
+      <input id="rate" class="range" type="range" min="0.5" max="1.2" step="0.05" value="0.85">
+
+      <button id="testBtn" class="btn big" type="button">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#volume"/></svg>
+        <span>Test voice</span>
+      </button>
+    </section>
+
+    <section class="card">
+      <h2 class="with-ico">
+        <span class="h-badge c-yellow" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#trophy"/></svg></span>
+        <span>Spelling Bee rules</span>
+      </h2>
+      <label class="field" for="beeWordCount">Words per round (1 to 30)</label>
+      <input id="beeWordCount" class="num-input" type="number" min="1" max="30" inputmode="numeric">
+
+      <label class="field" for="beeTimerSeconds">Seconds per word (0 = no timer)</label>
+      <input id="beeTimerSeconds" class="num-input" type="number" min="0" max="300" inputmode="numeric">
+
+      <label class="field" for="beeMaxRepeats">Times the word can be repeated (0 = unlimited)</label>
+      <input id="beeMaxRepeats" class="num-input" type="number" min="0" max="10" inputmode="numeric">
+
+      <p class="field">Help allowed during a Bee round</p>
+      <label class="check-row"><input id="beeAllowMeaning" type="checkbox"> Meaning</label>
+      <label class="check-row"><input id="beeAllowSentence" type="checkbox"> Example sentence</label>
+      <label class="check-row"><input id="beeAllowOrigin" type="checkbox"> Word origin (when verified)</label>
+    </section>
+
+    <p id="flash" class="flash" role="status" aria-live="polite"></p>
+    <button class="btn primary big" type="submit">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#check"/></svg>
+      <span>Save</span>
+    </button>
+    <button id="resetBtn" class="btn big ghost" type="button">Reset to defaults</button>
+  </form>
+</main>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/settings.js"></script>
+</body>
+</html>

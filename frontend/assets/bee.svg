@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 130" role="img" aria-label="Spell Buddy bee">
+  <defs>
+    <clipPath id="bodyClip"><ellipse cx="60" cy="96" rx="26" ry="24"/></clipPath>
+  </defs>
+  <ellipse cx="25" cy="76" rx="19" ry="30" transform="rotate(-25 25 76)" fill="#d6ecff" stroke="#8cc4f5" stroke-width="2.5"/>
+  <ellipse cx="95" cy="76" rx="19" ry="30" transform="rotate(25 95 76)" fill="#d6ecff" stroke="#8cc4f5" stroke-width="2.5"/>
+  <ellipse cx="60" cy="96" rx="26" ry="24" fill="#ffc933" stroke="#3b2a14" stroke-width="3"/>
+  <g clip-path="url(#bodyClip)">
+    <rect x="30" y="90" width="60" height="9" fill="#3b2a14"/>
+    <rect x="30" y="107" width="60" height="9" fill="#3b2a14"/>
+  </g>
+  <path d="M48 26 Q42 12 34 10" fill="none" stroke="#3b2a14" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="33" cy="10" r="4.5" fill="#3b2a14"/>
+  <path d="M72 26 Q78 12 86 10" fill="none" stroke="#3b2a14" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="87" cy="10" r="4.5" fill="#3b2a14"/>
+  <circle cx="60" cy="54" r="32" fill="#ffd94d" stroke="#3b2a14" stroke-width="3"/>
+  <ellipse cx="48" cy="52" rx="8" ry="10" fill="#fff" stroke="#3b2a14" stroke-width="2"/>
+  <ellipse cx="72" cy="52" rx="8" ry="10" fill="#fff" stroke="#3b2a14" stroke-width="2"/>
+  <circle cx="50" cy="54" r="5" fill="#3b2a14"/>
+  <circle cx="70" cy="54" r="5" fill="#3b2a14"/>
+  <circle cx="52" cy="51" r="1.8" fill="#fff"/>
+  <circle cx="72" cy="51" r="1.8" fill="#fff"/>
+  <circle cx="37" cy="67" r="5" fill="#ff9aa2" opacity="0.7"/>
+  <circle cx="83" cy="67" r="5" fill="#ff9aa2" opacity="0.7"/>
+  <path d="M50 68 Q60 80 70 68" fill="none" stroke="#3b2a14" stroke-width="3" stroke-linecap="round"/>
+</svg>

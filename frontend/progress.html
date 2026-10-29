@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progress · Spell Buddy</title>
+  <link rel="icon" href="assets/bee.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/icons.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+<main class="container">
+  <h1 class="with-ico">
+    <span class="h-badge c-purple" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#bar-chart"/></svg></span>
+    <span>Your progress</span>
+  </h1>
+  <p class="muted">Saved on this device only. Clearing your browser data erases it.</p>
+
+  <div class="stats">
+    <div class="stat"><span class="stat-ico c-purple" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#book-open"/></svg></span><strong id="statAnswered">0</strong><span class="lbl">Answered</span></div>
+    <div class="stat"><span class="stat-ico c-green" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#check-circle"/></svg></span><strong id="statCorrect">0</strong><span class="lbl">Correct</span></div>
+    <div class="stat"><span class="stat-ico c-blue" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#target"/></svg></span><strong id="statAccuracy">—</strong><span class="lbl">Accuracy</span></div>
+    <div class="stat"><span class="stat-ico c-orange" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#flame"/></svg></span><strong id="statStreak">0</strong><span class="lbl">Day streak</span></div>
+  </div>
+
+  <section class="card">
+    <h2>Your last sessions</h2>
+    <p id="chartEmpty" class="muted">No sessions yet. Try a Quick Practice!</p>
+    <div id="recentChart" class="chart" hidden></div>
+  </section>
+
+  <section class="card">
+    <h2>Accuracy by mode</h2>
+    <p id="modeEmpty" class="muted">Play a session to see how you are doing.</p>
+    <div id="modeBars"></div>
+  </section>
+
+  <section class="card">
+    <h2>Words to review</h2>
+    <p id="mistakeEmpty" class="muted"></p>
+    <ul id="mistakeList" class="plain-list"></ul>
+    <a id="reviewBtn" class="btn primary big" href="practice.html?mode=review" hidden>
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#rotate"/></svg>
+      <span>Review mistakes</span>
+    </a>
+  </section>
+
+  <section class="card">
+    <h2>Recent sessions</h2>
+    <p id="recentEmpty" class="muted">No sessions yet.</p>
+    <ul id="recentList" class="plain-list"></ul>
+  </section>
+
+  <button id="resetBtn" class="btn big ghost" type="button">Erase my progress</button>
+</main>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/progress.js"></script>
+</body>
+</html>

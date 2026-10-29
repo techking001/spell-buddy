@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Spell Buddy: listen to words, spell them, and get ready for spelling bees.">
+  <title>Spell Buddy</title>
+  <link rel="icon" href="assets/bee.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/icons.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+<main class="container wide">
+
+  <section class="card hero-card">
+    <img class="mascot bob" src="assets/bee.svg" width="150" height="162" alt="">
+    <div class="hero-text">
+      <h1>Ready to become a spelling champion?</h1>
+      <p>Listen, spell and grow your vocabulary one word at a time. No sign-up needed.</p>
+      <a id="startBtn" class="btn accent" href="practice.html?difficulty=mixed">
+        <svg class="icon fill" aria-hidden="true" focusable="false"><use href="assets/icons.svg#play"/></svg>
+        <span>Start practising</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="goalTitle">
+    <div class="goal-top">
+      <span class="goal-ico" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#target"/></svg></span>
+      <div>
+        <h2 id="goalTitle">Today's goal</h2>
+        <p id="goalText" class="muted">Loading…</p>
+      </div>
+      <strong id="goalPct" class="goal-pct">0%</strong>
+    </div>
+    <div id="goalTrack" class="bar" role="progressbar" aria-labelledby="goalTitle" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <span id="goalFill" class="bar-fill"></span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Choose your level</h2>
+    <fieldset class="chips row4">
+      <legend>Word level</legend>
+      <label class="chip"><input type="radio" name="level" value="easy"><span>Easy</span></label>
+      <label class="chip"><input type="radio" name="level" value="medium"><span>Medium</span></label>
+      <label class="chip"><input type="radio" name="level" value="hard"><span>Hard</span></label>
+      <label class="chip"><input type="radio" name="level" value="mixed" checked><span>Mixed</span></label>
+    </fieldset>
+    <fieldset class="chips row3">
+      <legend>Computer strength (for “Play the Computer”)</legend>
+      <label class="chip"><input type="radio" name="computer" value="easy"><span>Easy</span></label>
+      <label class="chip"><input type="radio" name="computer" value="medium" checked><span>Medium</span></label>
+      <label class="chip"><input type="radio" name="computer" value="hard"><span>Hard</span></label>
+    </fieldset>
+  </section>
+
+  <section class="tiles" aria-label="Ways to play">
+    <a id="tilePractice" class="tile t-purple" href="practice.html?difficulty=mixed">
+      <span class="tile-ico" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#zap"/></svg></span>
+      <strong>Quick Practice</strong>
+      <span class="tile-sub">Jump in and practise now</span>
+      <span class="tile-go" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#arrow-right"/></svg></span>
+    </a>
+    <a id="tileLearn" class="tile t-blue" href="learn.html">
+      <span class="tile-ico" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#book-open"/></svg></span>
+      <strong>Learn New Words</strong>
+      <span class="tile-sub">Meanings, syllables and origins</span>
+      <span class="tile-go" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#arrow-right"/></svg></span>
+    </a>
+    <a id="tileBee" class="tile t-yellow" href="bee.html?difficulty=mixed">
+      <span class="tile-ico" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#trophy"/></svg></span>
+      <strong>Spelling Bee Challenge</strong>
+      <span class="tile-sub">One try per word, like the real thing</span>
+      <span class="tile-go" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#arrow-right"/></svg></span>
+    </a>
+    <a id="tileReview" class="tile t-green" href="practice.html?mode=review">
+      <span id="reviewBadge" class="badge" hidden></span>
+      <span class="tile-ico" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#rotate"/></svg></span>
+      <strong>Review Mistakes</strong>
+      <span class="tile-sub">Improve on the words you missed</span>
+      <span class="tile-go" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#arrow-right"/></svg></span>
+    </a>
+    <a id="tileComputer" class="tile t-pink" href="bee.html?opponent=computer&amp;computer=medium&amp;difficulty=mixed">
+      <span class="tile-ico" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#bot"/></svg></span>
+      <strong>Play the Computer</strong>
+      <span class="tile-sub">Spell the same words. Higher score wins!</span>
+      <span class="tile-go" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#arrow-right"/></svg></span>
+    </a>
+  </section>
+
+  <section class="card" aria-labelledby="progTitle">
+    <h2 id="progTitle">Your progress</h2>
+    <div class="mini-stats">
+      <div class="mini"><span class="mini-ico c-purple" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#book-open"/></svg></span><div><strong id="sAnswered">0</strong><span class="lbl">Words practised</span></div></div>
+      <div class="mini"><span class="mini-ico c-blue" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#target"/></svg></span><div><strong id="sAccuracy">—</strong><span class="lbl">Accuracy</span></div></div>
+      <div class="mini"><span class="mini-ico c-orange" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#flame"/></svg></span><div><strong id="sStreak">0</strong><span class="lbl">Day streak</span></div></div>
+      <div class="mini"><span class="mini-ico c-green" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#rotate"/></svg></span><div><strong id="sReview">0</strong><span class="lbl">Words to review</span></div></div>
+    </div>
+  </section>
+
+  <section class="card quote-card">
+    <img src="assets/bee.svg" width="56" height="61" alt="">
+    <p>“Small steps every day lead to big results!”</p>
+  </section>
+
+  <p class="muted center">30 free words · practise as often as you like</p>
+</main>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/home.js"></script>
+</body>
+</html>

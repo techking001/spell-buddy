@@ -1,0 +1,83 @@
+/* ---------- base icon ---------- */
+.icon{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.icon.fill{fill:currentColor}
+.btn .icon{width:1.2em;height:1.2em}
+.btn.big .icon{width:1.3em;height:1.3em}
+
+/* ---------- colour chips (shared) ---------- */
+.c-purple{background:#e6e0ff;color:#5b3fd1}
+.c-green{background:#d4f5df;color:#15803d}
+.c-orange{background:#ffe8cc;color:#c2410c}
+.c-blue{background:#d6ebff;color:#1d6fc4}
+.c-yellow{background:#fff0b8;color:#8a6200}
+
+/* ---------- headings with an icon badge ---------- */
+.with-ico{display:flex;align-items:center;gap:10px}
+.h-badge{display:grid;place-items:center;flex:none;width:38px;height:38px;border-radius:12px}
+.h-badge .icon{width:22px;height:22px}
+h2.with-ico .h-badge{width:34px;height:34px}
+h2.with-ico .h-badge .icon{width:19px;height:19px}
+
+/* ---------- navigation ---------- */
+.nav-menu a .ico{background:#fff;color:var(--purple)}
+.nav-menu a .ico .icon{width:22px;height:22px}
+.nav-menu a[aria-current="page"] .ico{background:rgba(255,255,255,.18);color:#fff;box-shadow:none}
+@media (min-width:980px){
+  .nav-menu a .ico{background:var(--purple-soft)}
+  .nav-menu a .ico .icon{width:18px;height:18px}
+  .nav-menu a[aria-current="page"] .ico{background:rgba(255,255,255,.2)}
+}
+
+/* ---------- home ---------- */
+.goal-ico{background:linear-gradient(135deg,#ffd94d,#f5a700);color:#fff;box-shadow:0 6px 12px rgba(245,167,0,.3)}
+.goal-ico .icon{width:26px;height:26px}
+.tile-ico{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;color:#fff;box-shadow:0 6px 12px rgba(30,27,75,.18)}
+.tile-ico .icon{width:26px;height:26px}
+.t-purple .tile-ico{background:linear-gradient(135deg,#8a6cff,#5b3fd1)}
+.t-blue .tile-ico{background:linear-gradient(135deg,#4aa8ff,#1d6fc4)}
+.t-yellow .tile-ico{background:linear-gradient(135deg,#ffd94d,#e59a00)}
+.t-green .tile-ico{background:linear-gradient(135deg,#34d399,#15803d)}
+.t-pink .tile-ico{background:linear-gradient(135deg,#ff7ab0,#d6336c)}
+.tile-go{color:var(--purple-dark)}
+.tile-go .icon{width:18px;height:18px}
+.mini-ico{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:12px}
+.mini-ico .icon{width:22px;height:22px}
+.tip{display:flex;align-items:center;justify-content:center;gap:8px;color:var(--muted);font-size:.92rem}
+.tip .icon{width:18px;height:18px;color:var(--yellow-dark)}
+
+/* ---------- practice and bee ---------- */
+.speaker-icon .icon{width:54px;height:54px;stroke-width:2.2}
+.speaker.speaking .speaker-icon{animation:ring 1.3s ease-out infinite}
+.btn.speaking .icon{animation:beat .8s ease-in-out infinite}
+.feedback{display:flex;align-items:center;justify-content:center;gap:10px;text-align:left}
+.fb-ico{display:grid;place-items:center;flex:none;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.75)}
+.fb-ico .icon{width:18px;height:18px}
+.comp-line{display:flex;align-items:center;justify-content:center;gap:8px}
+.comp-line .icon{width:22px;height:22px;color:var(--purple)}
+
+/* ---------- learn ---------- */
+.round-btn{display:grid;place-items:center}
+.round-btn .icon{width:26px;height:26px}
+.info dt{display:flex;align-items:center;gap:8px}
+.info dt .icon{width:17px;height:17px;color:var(--purple)}
+
+/* ---------- progress ---------- */
+.stat-ico{display:grid;place-items:center;width:42px;height:42px;margin:0 auto 6px;border-radius:12px}
+.stat-ico .icon{width:22px;height:22px}
+
+/* ---------- settings and premium ---------- */
+.flash{display:flex;align-items:center;justify-content:center;gap:8px}
+.flash .icon{width:20px;height:20px}
+.flash.fail{color:var(--bad)}
+.perks li{display:flex;align-items:flex-start;gap:12px;padding:8px 0}
+.perks li::before{content:none}
+.perk-ico{display:grid;place-items:center;flex:none;width:26px;height:26px;margin-top:1px;border-radius:50%;background:#d4f5df;color:#15803d}
+.perks.soon .perk-ico{background:var(--yellow-soft);color:#8a6200}
+.perk-ico .icon{width:15px;height:15px;stroke-width:3}
+
+@keyframes ring{
+  0%{box-shadow:0 8px 0 var(--purple-dark),0 14px 24px rgba(63,42,158,.35),0 0 0 0 rgba(91,63,209,.45)}
+  100%{box-shadow:0 8px 0 var(--purple-dark),0 14px 24px rgba(63,42,158,.35),0 0 0 22px rgba(91,63,209,0)}
+}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+@media (prefers-reduced-motion:reduce){.speaker.speaking .speaker-icon,.btn.speaking .icon{animation:none!important}}

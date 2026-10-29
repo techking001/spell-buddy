@@ -1,0 +1,25 @@
+.session-top{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+.back{display:inline-flex;align-items:center;min-height:44px;font-weight:800;text-decoration:none}
+.prompt{text-align:center;font-weight:800;color:var(--muted);margin:14px 0 0}
+.ready-card{text-align:center}
+.ready-card .mascot{margin:0 auto 8px;width:110px}
+
+.speaker{display:flex;flex-direction:column;align-items:center;gap:10px;margin:8px auto 16px;padding:0;background:none;border:0;font:inherit;font-weight:800;color:var(--purple-dark);cursor:pointer}
+.speaker-icon{display:grid;place-items:center;width:112px;height:112px;border-radius:50%;font-size:3rem;color:#fff;background:radial-gradient(circle at 30% 25%,#8a6cff,var(--purple));box-shadow:0 8px 0 var(--purple-dark),0 14px 24px rgba(63,42,158,.35);transition:transform .1s,box-shadow .1s}
+.speaker:active .speaker-icon{transform:translateY(5px);box-shadow:0 3px 0 var(--purple-dark)}
+.speaker:focus-visible{outline:3px solid var(--purple);outline-offset:6px;border-radius:24px}
+
+.helpers{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:8px 0}
+.aid{background:var(--purple-soft);border-radius:var(--radius-sm);padding:10px 14px;margin:8px 0}
+.answer{width:100%;margin:8px 0;padding:16px;font:inherit;font-size:1.6rem;font-weight:800;text-align:center;color:var(--ink);background:#fff;border:3px solid var(--line);border-radius:var(--radius)}
+.answer:focus{outline:none;border-color:var(--purple);box-shadow:0 0 0 4px rgba(91,63,209,.2)}
+.answer:disabled{background:#f1f2f9}
+
+.feedback{min-height:1.8em;margin:10px 0;border-radius:var(--radius-sm);font-weight:800;text-align:center}
+.feedback:not(:empty){padding:10px 12px}
+.feedback.good{background:var(--good-soft);color:#14532d;animation:pop .35s}
+.feedback.bad{background:var(--bad-soft);color:#7c2d12;animation:pop .35s}
+.feedback.warn{background:var(--yellow-soft);color:#6b4500}
+
+.score{margin:0;text-align:center;font-size:3.2rem;font-weight:900;color:var(--purple-dark)}
+.missed{padding-left:22px}

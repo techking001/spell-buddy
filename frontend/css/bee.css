@@ -1,0 +1,14 @@
+.rules{padding-left:22px;margin:8px 0 12px}
+.rules li{margin:8px 0}
+.timer{position:relative;height:34px;margin:0 0 12px;overflow:hidden;border-radius:999px;background:#e3e8fb}
+.timer-bar{width:100%;height:100%;background:#a5b4fc;transition:width 1s linear}
+.timer.low .timer-bar{background:#fdba74}
+.timer-text{position:absolute;inset:0;display:grid;place-items:center;font-weight:900}
+.scoreboard{margin:0 0 12px;padding:8px;border-radius:var(--radius-sm);background:var(--yellow-soft);text-align:center;font-weight:900;font-size:1.1rem}
+.comp-line{margin:4px 0 8px;text-align:center;font-weight:800}
+.match-result{margin:8px 0 16px;text-align:center;font-weight:900;font-size:1.2rem}
+.check-row{display:flex;align-items:center;gap:10px;min-height:48px;font-weight:700}
+.check-row input{flex:none;width:24px;height:24px;accent-color:var(--purple)}
+.num-input{width:100%;padding:12px;font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:var(--radius-sm)}
+.num-input:focus{outline:none;border-color:var(--purple);box-shadow:0 0 0 4px rgba(91,63,209,.2)}
+.section-title{margin-top:22px}

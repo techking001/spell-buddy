@@ -1,0 +1,18 @@
+@media (min-width:700px){
+  .container{max-width:720px}
+  .hero-card{grid-template-columns:auto 1fr;gap:24px;padding:24px 28px;text-align:left;justify-items:start}
+  .hero-card .mascot{width:190px}
+  .hero-text h1{font-size:2.2rem}
+  .tiles{grid-template-columns:repeat(3,1fr)}
+  .tile:nth-child(5):last-child{grid-column:auto}
+  .mini-stats,.stats{grid-template-columns:repeat(4,1fr)}
+  .word-list{grid-template-columns:repeat(3,1fr)}
+}
+@media (min-width:900px){
+  .container.wide{max-width:1040px}
+  .tiles{grid-template-columns:repeat(5,1fr)}
+}
+@media (max-width:359px){
+  h1{font-size:1.4rem}
+  .speaker-icon{width:96px;height:96px;font-size:2.6rem}
+}

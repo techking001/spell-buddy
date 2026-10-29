@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn · Spell Buddy</title>
+  <link rel="icon" href="assets/bee.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/practice.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/icons.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+<main class="container">
+
+  <section id="loading" class="card" aria-busy="true">
+    <span class="skeleton block"></span>
+    <span class="skeleton line"></span>
+    <span class="skeleton line"></span>
+  </section>
+
+  <section id="listView" class="card" hidden>
+    <h1 class="with-ico">
+      <span class="h-badge c-blue" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#book-open"/></svg></span>
+      <span>Learn New Words</span>
+    </h1>
+    <p class="muted">Pick a word to see its meaning, syllables, example and origin.</p>
+    <fieldset class="chips filters">
+      <legend>Level</legend>
+      <label class="chip"><input type="radio" name="level" value="all" checked><span>All</span></label>
+      <label class="chip"><input type="radio" name="level" value="easy"><span>Easy</span></label>
+      <label class="chip"><input type="radio" name="level" value="medium"><span>Medium</span></label>
+      <label class="chip"><input type="radio" name="level" value="hard"><span>Hard</span></label>
+    </fieldset>
+    <ul id="wordList" class="word-list"></ul>
+  </section>
+
+  <section id="cardView" class="card" hidden>
+    <button id="backBtn" class="btn small ghost" type="button">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#arrow-left"/></svg>
+      <span>All words</span>
+    </button>
+    <div class="word-head">
+      <p id="lWord" class="big-word"></p>
+      <button id="hearWord" class="round-btn" type="button" aria-label="Hear the word">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#volume"/></svg>
+      </button>
+    </div>
+    <p id="speechWarning" class="warn" hidden>This browser cannot speak words aloud, but you can still read everything below.</p>
+    <div class="tags">
+      <span id="lPos" class="tag purple" hidden></span>
+      <span id="lLevel" class="tag yellow" hidden></span>
+    </div>
+
+    <dl class="detail">
+      <div class="info"><dt><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#type"/></svg>Syllables</dt><dd id="lSyllables"></dd></div>
+      <div class="info"><dt><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#book"/></svg>Meaning</dt><dd id="lDef"></dd></div>
+      <div class="info"><dt><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#message"/></svg>Example</dt><dd id="lExample"></dd></div>
+      <div class="info"><dt><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#globe"/></svg>Origin</dt><dd id="lOrigin"></dd></div>
+    </dl>
+
+    <div class="hear-row">
+      <button id="hearMeaning" class="btn small" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#volume"/></svg><span>Meaning</span></button>
+      <button id="hearSentence" class="btn small" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#volume"/></svg><span>Sentence</span></button>
+      <button id="hearOrigin" class="btn small" type="button" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#volume"/></svg><span>Origin</span></button>
+    </div>
+
+    <label for="tryInput" class="try-label">Now try spelling it</label>
+    <input id="tryInput" class="answer" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+    <p id="tryFeedback" class="feedback" role="status" aria-live="polite"></p>
+    <button id="tryBtn" class="btn primary big" type="button">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#check"/></svg>
+      <span>Check</span>
+    </button>
+
+    <div class="nav-row">
+      <button id="prevBtn" class="btn" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#arrow-left"/></svg><span>Previous</span></button>
+      <button id="nextBtn" class="btn" type="button"><span>Next</span><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#arrow-right"/></svg></button>
+    </div>
+  </section>
+
+  <section id="error" class="card" hidden>
+    <p id="errorMsg"></p>
+    <a class="btn primary" href="index.html">Back home</a>
+  </section>
+
+</main>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/learning.js"></script>
+</body>
+</html>

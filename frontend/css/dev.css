@@ -1,0 +1,8 @@
+.check-list{list-style:none;padding:0;margin:0}
+.check-list li{padding:8px 0;border-bottom:1px solid #eef0fb}
+.check-list li.fail{color:var(--bad);font-weight:700}
+.check-list li.warn{color:var(--warn)}
+.table-wrap{overflow-x:auto;margin-top:12px}
+.words-table{border-collapse:collapse;width:100%;min-width:640px;font-size:.9rem}
+.words-table th,.words-table td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.words-table th{background:#eef0ff}
