@@ -1,4 +1,3 @@
-export const SESSION_LENGTH = 10;
 export const DAILY_GOAL_WORDS = 10;
 export const DIFFICULTIES = ['easy', 'medium', 'hard', 'mixed'];
 

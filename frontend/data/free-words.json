@@ -1,32 +1,5101 @@
 [
-{"id":"free-001","word":"because","difficulty":"easy","definition":"for the reason that","part_of_speech":"conjunction","example_sentence":"I stayed inside because it was raining.","syllables":["be","cause"],"etymology":{"summary":"It began in Middle English as the phrase \"by cause\", meaning \"for the reason that\". It was copied from the French phrase \"par cause\".","source_notes":["Looked up: Online Etymology Dictionary, https://www.etymonline.com/word/because"],"verification_status":"verified"},"pronunciation":{"text":"because","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-002","word":"friend","difficulty":"easy","definition":"a person you know well and like","part_of_speech":"noun","example_sentence":"She is my best friend.","syllables":["friend"],"etymology":{"summary":"It comes from the Old English word \"freond\", which came from an old Germanic word meaning \"one who loves\".","source_notes":["Looked up: Online Etymology Dictionary, https://www.etymonline.com/word/friend"],"verification_status":"verified"},"pronunciation":{"text":"friend","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-003","word":"people","difficulty":"easy","definition":"men, women and children","part_of_speech":"noun","example_sentence":"Many people came to the party.","syllables":["peo","ple"],"etymology":{"summary":"It came into English from Old French, which got it from the Latin word \"populus\", meaning a nation or community of people.","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/people"],"verification_status":"pending"},"pronunciation":{"text":"people","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-004","word":"school","difficulty":"easy","definition":"a place where children go to learn","part_of_speech":"noun","example_sentence":"We walk to school every morning.","syllables":["school"],"etymology":{"summary":"It comes from Old English \"scol\", borrowed from Latin \"schola\". The Latin word came from a Greek word that first meant \"free time\" or \"leisure\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/school"],"verification_status":"pending"},"pronunciation":{"text":"school","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-005","word":"answer","difficulty":"easy","definition":"a reply to a question","part_of_speech":"noun","example_sentence":"Write your answer on the line.","syllables":["an","swer"],"etymology":{"summary":"It comes from Old English \"andswaru\", made from a word meaning \"against\" or \"in return\" and a word related to \"swear\". It first meant a statement made in reply.","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/answer"],"verification_status":"pending"},"pronunciation":{"text":"answer","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-006","word":"animal","difficulty":"easy","definition":"a living thing that can move and feel, such as a dog or a bird","part_of_speech":"noun","example_sentence":"A lion is a wild animal.","syllables":["an","i","mal"],"etymology":{"summary":"It comes from the Latin word \"animal\", meaning a living being. That word came from \"anima\", which meant \"breath\" or \"soul\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/animal"],"verification_status":"pending"},"pronunciation":{"text":"animal","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-007","word":"orange","difficulty":"easy","definition":"a round fruit with a thick skin, or the colour of that fruit","part_of_speech":"noun","example_sentence":"She peeled an orange for lunch.","syllables":["or","ange"],"etymology":{"summary":"It came into English from Old French, which got it through Italian and Arabic from the Persian word \"narang\" and the Sanskrit word \"naranga\", meaning orange tree. Where the Sanskrit word came from is uncertain. The name of the fruit came first, and the colour was named after the fruit.","source_notes":["Looked up: Online Etymology Dictionary, https://www.etymonline.com/word/orange"],"verification_status":"pending"},"pronunciation":{"text":"orange","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-008","word":"window","difficulty":"easy","definition":"an opening in a wall that lets in light and air","part_of_speech":"noun","example_sentence":"Please open the window.","syllables":["win","dow"],"etymology":{"summary":"It comes from an Old Norse word, \"vindauga\", which means \"wind eye\". It is made from the words for \"wind\" and \"eye\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/window"],"verification_status":"pending"},"pronunciation":{"text":"window","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-009","word":"family","difficulty":"easy","definition":"a group of people who are related, such as parents and children","part_of_speech":"noun","example_sentence":"My family eats dinner together.","syllables":["fam","i","ly"],"etymology":{"summary":"It comes from the Latin word \"familia\", meaning a household, including the servants who lived in it.","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/family"],"verification_status":"pending"},"pronunciation":{"text":"family","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-010","word":"garden","difficulty":"easy","definition":"a piece of ground where flowers or vegetables are grown","part_of_speech":"noun","example_sentence":"We planted beans in the garden.","syllables":["gar","den"],"etymology":{"summary":"It came into English from Old French. That word goes back to an old Germanic word for an enclosed space, which is also related to the English word \"yard\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/garden"],"verification_status":"pending"},"pronunciation":{"text":"garden","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-011","word":"beautiful","difficulty":"medium","definition":"very pleasing to look at","part_of_speech":"adjective","example_sentence":"What a beautiful garden.","syllables":["beau","ti","ful"],"etymology":{"summary":"It is made from the word \"beauty\" plus the ending \"-ful\", meaning \"full of\". \"Beauty\" came from Old French, which got it from the Latin word \"bellus\", meaning pretty.","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/beautiful"],"verification_status":"pending"},"pronunciation":{"text":"beautiful","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-012","word":"library","difficulty":"medium","definition":"a place where books are kept for people to read or borrow","part_of_speech":"noun","example_sentence":"We borrowed books from the library.","syllables":["li","brar","y"],"etymology":{"summary":"It comes from the Latin word \"librarium\", a place for books. That is related to \"liber\", the Latin word for \"book\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/library"],"verification_status":"pending"},"pronunciation":{"text":"library","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-013","word":"necessary","difficulty":"medium","definition":"needed; something you must have","part_of_speech":"adjective","example_sentence":"Water is necessary for life.","syllables":["nec","es","sar","y"],"etymology":{"summary":"It comes from the Latin word \"necessarius\", meaning unavoidable or needed, which came from \"necesse\", meaning \"needful\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/necessary"],"verification_status":"pending"},"pronunciation":{"text":"necessary","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-014","word":"separate","difficulty":"medium","definition":"to keep or move things apart","part_of_speech":"verb","example_sentence":"Please separate the red socks from the white ones.","syllables":["sep","a","rate"],"etymology":{"summary":"It comes from the Latin word \"separare\", meaning to put apart. It is made from \"se-\", meaning \"apart\", and \"parare\", meaning \"to prepare\" or \"to arrange\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/separate"],"verification_status":"pending"},"pronunciation":{"text":"separate","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-015","word":"February","difficulty":"medium","definition":"the second month of the year","part_of_speech":"noun","example_sentence":"My birthday is in February.","syllables":["Feb","ru","ar","y"],"etymology":{"summary":"It comes from the Latin name \"Februarius\", which was named after \"Februa\", an old Roman festival of cleansing held in this month.","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/february"],"verification_status":"pending"},"pronunciation":{"text":"February","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-016","word":"government","difficulty":"medium","definition":"the people who run a country","part_of_speech":"noun","example_sentence":"The government built a new road.","syllables":["gov","ern","ment"],"etymology":{"summary":"It came into English from Old French and is built on the verb \"govern\". That verb goes back to the Latin word \"gubernare\", meaning \"to steer\" a ship, which came from Greek.","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/government"],"verification_status":"pending"},"pronunciation":{"text":"government","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-017","word":"different","difficulty":"medium","definition":"not the same as another","part_of_speech":"adjective","example_sentence":"My shoes are different from yours.","syllables":["dif","fer","ent"],"etymology":{"summary":"It comes from the Latin word \"differens\", from \"differre\", meaning to carry apart or to be unlike.","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/different"],"verification_status":"pending"},"pronunciation":{"text":"different","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-018","word":"knowledge","difficulty":"medium","definition":"what you know from learning or experience","part_of_speech":"noun","example_sentence":"Reading adds to your knowledge.","syllables":["knowl","edge"],"etymology":{"summary":"It first appeared in early Middle English as \"cnawlece\", meaning to honour or acknowledge a superior. The first part is the word \"know\". The origin of the ending is unclear.","source_notes":["Looked up: Online Etymology Dictionary, https://www.etymonline.com/word/knowledge"],"verification_status":"pending"},"pronunciation":{"text":"knowledge","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-019","word":"environment","difficulty":"medium","definition":"the surroundings or conditions in which a person, animal, or plant lives","part_of_speech":"noun","example_sentence":"Everyone has a role in protecting the environment.","syllables":["en","vi","ron","ment"],"etymology":{"summary":"It is built from the French word \"environ\", meaning \"around\". So \"environment\" means the things that surround you.","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/environment"],"verification_status":"pending"},"pronunciation":{"text":"environment","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-020","word":"calendar","difficulty":"medium","definition":"a chart showing the days, weeks and months of the year","part_of_speech":"noun","example_sentence":"Mark the date on the calendar.","syllables":["cal","en","dar"],"etymology":{"summary":"It comes from the Latin word \"kalendarium\", an account book. It was named after the \"kalends\", the first day of each Roman month, when debts were due.","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/calendar"],"verification_status":"pending"},"pronunciation":{"text":"calendar","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-021","word":"rhythm","difficulty":"hard","definition":"a regular pattern of sound or movement","part_of_speech":"noun","example_sentence":"The drummer kept a steady rhythm.","syllables":["rhy","thm"],"etymology":{"summary":"It comes from the Greek word \"rhythmos\", meaning a measured flow or movement in time. It reached English through Latin and French.","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/rhythm"],"verification_status":"pending"},"pronunciation":{"text":"rhythm","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-022","word":"conscience","difficulty":"hard","definition":"the inner feeling that tells you what is right and wrong","part_of_speech":"noun","example_sentence":"His conscience bothered him after he told a lie.","syllables":["con","science"],"etymology":{"summary":"It comes from the Latin word \"conscientia\", meaning inner knowledge. It is made from \"con-\", meaning \"with\", and \"scire\", meaning \"to know\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/conscience"],"verification_status":"pending"},"pronunciation":{"text":"conscience","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-023","word":"pneumonia","difficulty":"hard","definition":"a serious illness that affects the lungs","part_of_speech":"noun","example_sentence":"He stayed in hospital with pneumonia.","syllables":["pneu","mo","nia"],"etymology":{"summary":"It comes from Greek, from the word \"pneumon\", meaning \"lung\", which is related to a verb meaning \"to breathe\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/pneumonia"],"verification_status":"pending"},"pronunciation":{"text":"pneumonia","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-024","word":"mnemonic","difficulty":"hard","definition":"a trick that helps you remember something","part_of_speech":"noun","example_sentence":"She used a mnemonic to remember the planets.","syllables":["mne","mon","ic"],"etymology":{"summary":"It comes from the Greek word \"mnemonikos\", meaning \"having to do with memory\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/mnemonic"],"verification_status":"pending"},"pronunciation":{"text":"mnemonic","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-025","word":"silhouette","difficulty":"hard","definition":"a dark shape seen against a lighter background","part_of_speech":"noun","example_sentence":"We saw the silhouette of a tree at sunset.","syllables":["sil","hou","ette"],"etymology":{"summary":"It was borrowed from French and comes from the name of Étienne de Silhouette, a French finance minister in 1759. People still disagree about why his name was attached to dark profile portraits. A common explanation is that he was known for cheap, plain measures, and these portraits were a cheap way to get a likeness.","source_notes":["Looked up: Online Etymology Dictionary, https://www.etymonline.com/word/silhouette"],"verification_status":"pending"},"pronunciation":{"text":"silhouette","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-026","word":"bureaucracy","difficulty":"hard","definition":"a system of rules and officials that can make things slow","part_of_speech":"noun","example_sentence":"The bureaucracy delayed the new school.","syllables":["bu","reau","cra","cy"],"etymology":{"summary":"It was borrowed from French and joins \"bureau\", meaning desk or office, with a Greek ending meaning \"rule\". So it means \"rule by offices and officials\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/bureaucracy"],"verification_status":"pending"},"pronunciation":{"text":"bureaucracy","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-027","word":"questionnaire","difficulty":"hard","definition":"a set of written questions used to collect information","part_of_speech":"noun","example_sentence":"Please fill in the questionnaire.","syllables":["ques","tion","naire"],"etymology":{"summary":"It was borrowed from French. It is formed from the French verb \"questionner\", meaning \"to ask questions\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/questionnaire"],"verification_status":"pending"},"pronunciation":{"text":"questionnaire","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-028","word":"accommodate","difficulty":"hard","definition":"to have enough room for","part_of_speech":"verb","example_sentence":"The hall can accommodate two hundred guests.","syllables":["ac","com","mo","date"],"etymology":{"summary":"It comes from the Latin word \"accommodare\", meaning \"to make fit\". It is made from \"ad-\", meaning \"to\", and \"commodus\", meaning \"suitable\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/accommodate"],"verification_status":"pending"},"pronunciation":{"text":"accommodate","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-029","word":"entrepreneur","difficulty":"hard","definition":"a person who starts a business","part_of_speech":"noun","example_sentence":"The young entrepreneur opened her first shop.","syllables":["en","tre","pre","neur"],"etymology":{"summary":"It was borrowed from French, where it means \"one who undertakes\". It comes from the verb \"entreprendre\", \"to undertake\".","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/entrepreneur"],"verification_status":"pending"},"pronunciation":{"text":"entrepreneur","locale":"en","audio_url":null},"word_bank":"free"},
-{"id":"free-030","word":"conscientious","difficulty":"hard","definition":"careful and wanting to do things properly","part_of_speech":"adjective","example_sentence":"A conscientious student checks her work twice.","syllables":["con","sci","en","tious"],"etymology":{"summary":"It came from the French word \"consciencieux\", which is based on the Latin \"conscientia\", the word that gave us \"conscience\". It describes someone who listens to their conscience.","source_notes":["Draft from general reference knowledge, not looked up yet. Check: https://www.etymonline.com/word/conscientious"],"verification_status":"pending"},"pronunciation":{"text":"conscientious","locale":"en","audio_url":null},"word_bank":"free"}
+  {
+    "id": "free-001",
+    "word": "because",
+    "difficulty": "easy",
+    "definition": "for the reason that",
+    "part_of_speech": "conjunction",
+    "example_sentence": "I stayed inside because it was raining.",
+    "syllables": [
+      "be",
+      "cause"
+    ],
+    "etymology": {
+      "summary": "It comes from the Middle English phrase “bi cause”, meaning “by cause” or “for the reason that”. The phrase was modelled on French par cause.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/because"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "because",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-002",
+    "word": "friend",
+    "difficulty": "easy",
+    "definition": "a person whom you know well and like",
+    "part_of_speech": "noun",
+    "example_sentence": "She is my best friend.",
+    "syllables": [
+      "friend"
+    ],
+    "etymology": {
+      "summary": "It comes from Old English freond, from a Proto-Germanic word meaning “lover” or “friend”, related to an ancient root meaning “to love”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/friend"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "friend",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-003",
+    "word": "people",
+    "difficulty": "easy",
+    "definition": "humans in general; persons considered as a group",
+    "part_of_speech": "noun",
+    "example_sentence": "People from many towns attended the festival.",
+    "syllables": [
+      "peo",
+      "ple"
+    ],
+    "etymology": {
+      "summary": "It entered English through Anglo-French and Old French forms from Latin populus, meaning “a people” or “nation”. The deeper origin of the Latin word is uncertain.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/people"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "people",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-004",
+    "word": "school",
+    "difficulty": "easy",
+    "definition": "a place or institution where people are taught",
+    "part_of_speech": "noun",
+    "example_sentence": "We walk to school every morning.",
+    "syllables": [
+      "school"
+    ],
+    "etymology": {
+      "summary": "It comes from Old English scol, from Latin schola and Greek skholē. The Greek word first referred to leisure or free time used for learning and discussion.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/school"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "school",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-005",
+    "word": "answer",
+    "difficulty": "easy",
+    "definition": "a reply to a question",
+    "part_of_speech": "noun",
+    "example_sentence": "Write your answer on the line.",
+    "syllables": [
+      "an",
+      "swer"
+    ],
+    "etymology": {
+      "summary": "It comes from Old English andswaru, a compound related to and- (“against”) and swaru (“affirmation” or “reply”).",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/answer"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "answer",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-006",
+    "word": "animal",
+    "difficulty": "easy",
+    "definition": "a living creature, such as a dog, bird or fish",
+    "part_of_speech": "noun",
+    "example_sentence": "A tortoise is an animal.",
+    "syllables": [
+      "an",
+      "i",
+      "mal"
+    ],
+    "etymology": {
+      "summary": "It comes from Latin animale, “a living being”, from animalis (“living”) and anima (“breath” or “soul”).",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/animal"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "animal",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-007",
+    "word": "orange",
+    "difficulty": "easy",
+    "definition": "a round citrus fruit with a thick skin and juicy flesh",
+    "part_of_speech": "noun",
+    "example_sentence": "She packed an orange in her lunch box.",
+    "syllables": [
+      "or",
+      "ange"
+    ],
+    "etymology": {
+      "summary": "The fruit name entered English through Old French from Medieval Latin and Italian, ultimately from Arabic naranj, Persian narang and Sanskrit naranga. The colour name came later from the fruit.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/orange"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "orange",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-008",
+    "word": "window",
+    "difficulty": "easy",
+    "definition": "an opening in a wall that lets in light and air",
+    "part_of_speech": "noun",
+    "example_sentence": "Please open the window.",
+    "syllables": [
+      "win",
+      "dow"
+    ],
+    "etymology": {
+      "summary": "It comes from Old Norse vindauga, literally “wind eye”, formed from words meaning “wind” and “eye”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/window"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "window",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-009",
+    "word": "family",
+    "difficulty": "easy",
+    "definition": "a group of people related to one another, usually including parents and children",
+    "part_of_speech": "noun",
+    "example_sentence": "My family eats dinner together.",
+    "syllables": [
+      "fam",
+      "i",
+      "ly"
+    ],
+    "etymology": {
+      "summary": "It comes from Latin familia, which referred to the household and its servants, and later to the household as a whole.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/family"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "family",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-010",
+    "word": "garden",
+    "difficulty": "easy",
+    "definition": "a piece of land where flowers, vegetables or other plants are grown",
+    "part_of_speech": "noun",
+    "example_sentence": "We planted beans in the garden.",
+    "syllables": [
+      "gar",
+      "den"
+    ],
+    "etymology": {
+      "summary": "It came through Old French from a Germanic word for an enclosed space or garden.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/garden"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "garden",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-011",
+    "word": "beautiful",
+    "difficulty": "medium",
+    "definition": "very pleasing to look at",
+    "part_of_speech": "adjective",
+    "example_sentence": "What a beautiful garden.",
+    "syllables": [
+      "beau",
+      "ti",
+      "ful"
+    ],
+    "etymology": {
+      "summary": "It is formed from beauty and the suffix -ful. Beauty came through Anglo-French and Old French from Latin bellus, meaning “pretty” or “handsome”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/beautiful"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "beautiful",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-012",
+    "word": "library",
+    "difficulty": "medium",
+    "definition": "a place where books are kept for people to read or borrow",
+    "part_of_speech": "noun",
+    "example_sentence": "We borrowed books from the library.",
+    "syllables": [
+      "li",
+      "brar",
+      "y"
+    ],
+    "etymology": {
+      "summary": "It comes through Anglo-French and Old French from Latin librarium, a place or container for books, related to liber, “book”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/library"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "library",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-013",
+    "word": "necessary",
+    "difficulty": "medium",
+    "definition": "needed or required; essential",
+    "part_of_speech": "adjective",
+    "example_sentence": "Water is necessary for life.",
+    "syllables": [
+      "nec",
+      "es",
+      "sar",
+      "y"
+    ],
+    "etymology": {
+      "summary": "It comes through Old French from Latin necessarius, meaning “unavoidable” or “essential”, from necesse, “unavoidable”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/necessary"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "necessary",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-014",
+    "word": "separate",
+    "difficulty": "medium",
+    "definition": "to keep or move things apart",
+    "part_of_speech": "verb",
+    "example_sentence": "Please separate the red socks from the white ones.",
+    "syllables": [
+      "sep",
+      "a",
+      "rate"
+    ],
+    "etymology": {
+      "summary": "It comes from Latin separare, “to pull apart”, formed from se- (“apart”) and parare (“to prepare” or “make ready”).",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/separate"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "separate",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-015",
+    "word": "February",
+    "difficulty": "medium",
+    "definition": "the second month of the year",
+    "part_of_speech": "noun",
+    "example_sentence": "The new school term begins in February.",
+    "syllables": [
+      "Feb",
+      "ru",
+      "ar",
+      "y"
+    ],
+    "etymology": {
+      "summary": "It comes from Latin februarius mensis, “month of purification”, named in connection with Roman purification rites called februa. The deeper origin of februa is uncertain.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/February"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "February",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-016",
+    "word": "government",
+    "difficulty": "medium",
+    "definition": "the group of people and institutions responsible for governing a country or area",
+    "part_of_speech": "noun",
+    "example_sentence": "The government announced a new education policy.",
+    "syllables": [
+      "gov",
+      "ern",
+      "ment"
+    ],
+    "etymology": {
+      "summary": "It came through Old French governement from governer, ultimately Latin gubernare, originally “to steer” or “pilot”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/government"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "government",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-017",
+    "word": "different",
+    "difficulty": "medium",
+    "definition": "not the same as another",
+    "part_of_speech": "adjective",
+    "example_sentence": "My shoes are different from yours.",
+    "syllables": [
+      "dif",
+      "fer",
+      "ent"
+    ],
+    "etymology": {
+      "summary": "It came through Old French from Latin differentem, from differre, “to set apart” or “carry apart”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/different"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "different",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-018",
+    "word": "knowledge",
+    "difficulty": "medium",
+    "definition": "information, understanding or skills gained through learning or experience",
+    "part_of_speech": "noun",
+    "example_sentence": "Reading adds to your knowledge.",
+    "syllables": [
+      "knowl",
+      "edge"
+    ],
+    "etymology": {
+      "summary": "Its early Middle English form cnawlece meant “acknowledgment” or “honour”. The first element is related to know; the origin of the second element is uncertain.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/knowledge"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "knowledge",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-019",
+    "word": "environment",
+    "difficulty": "medium",
+    "definition": "the surroundings and conditions in which people, animals or plants live",
+    "part_of_speech": "noun",
+    "example_sentence": "We should protect the environment.",
+    "syllables": [
+      "en",
+      "vi",
+      "ron",
+      "ment"
+    ],
+    "etymology": {
+      "summary": "It is formed from environ and the suffix -ment. Environ came from Old French and means “to surround” or “encircle”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/environment"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "environment",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-020",
+    "word": "calendar",
+    "difficulty": "medium",
+    "definition": "a chart or system that shows the days, weeks and months of a year",
+    "part_of_speech": "noun",
+    "example_sentence": "Write the examination date on the calendar.",
+    "syllables": [
+      "cal",
+      "en",
+      "dar"
+    ],
+    "etymology": {
+      "summary": "It came through Old French from Latin calendarium, an account book, related to calendae, the first day of a Roman month when accounts were reckoned.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/calendar"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "calendar",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-021",
+    "word": "rhythm",
+    "difficulty": "hard",
+    "definition": "a regular pattern of sounds, beats or movements",
+    "part_of_speech": "noun",
+    "example_sentence": "The drummer kept a steady rhythm.",
+    "syllables": [
+      "rhy",
+      "thm"
+    ],
+    "etymology": {
+      "summary": "The spelling rhythm was introduced in the sixteenth century as a classical-looking form of Middle English rime. The word's history goes back through Latin rhythmus to Greek rhythmos, “measured flow” or “movement in time”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/rhythm"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "rhythm",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-022",
+    "word": "conscience",
+    "difficulty": "hard",
+    "definition": "the inner sense that helps a person judge what is right and wrong",
+    "part_of_speech": "noun",
+    "example_sentence": "His conscience bothered him after he told a lie.",
+    "syllables": [
+      "con",
+      "science"
+    ],
+    "etymology": {
+      "summary": "It comes from Old French and Latin conscientia, meaning inner knowledge or awareness, especially a sense of right and wrong.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/conscience"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "conscience",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-023",
+    "word": "pneumonia",
+    "difficulty": "hard",
+    "definition": "an illness in which the tissues of the lungs become inflamed",
+    "part_of_speech": "noun",
+    "example_sentence": "The doctor treated the patient for pneumonia.",
+    "syllables": [
+      "pneu",
+      "mo",
+      "ni",
+      "a"
+    ],
+    "etymology": {
+      "summary": "It comes from Modern Latin and Greek pneumonia, “inflammation of the lungs”, from Greek pneumōn, “lung”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/pneumonia"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "pneumonia",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-024",
+    "word": "mnemonic",
+    "difficulty": "hard",
+    "definition": "a method, pattern or device that helps someone remember information",
+    "part_of_speech": "noun",
+    "example_sentence": "She used a mnemonic to remember the planets.",
+    "syllables": [
+      "mne",
+      "mon",
+      "ic"
+    ],
+    "etymology": {
+      "summary": "It comes from Greek mnēmonikos, “relating to memory”, from mnēmōn, “remembering” or “mindful”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/mnemonic"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "mnemonic",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-025",
+    "word": "silhouette",
+    "difficulty": "hard",
+    "definition": "the dark outline or shape of something seen against a lighter background",
+    "part_of_speech": "noun",
+    "example_sentence": "We saw the silhouette of a tree at sunset.",
+    "syllables": [
+      "sil",
+      "hou",
+      "ette"
+    ],
+    "etymology": {
+      "summary": "It came from French portrait à la Silhouette and was named after Étienne de Silhouette, a French finance minister. The exact reason for the association is uncertain.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/silhouette"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "silhouette",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-026",
+    "word": "bureaucracy",
+    "difficulty": "hard",
+    "definition": "a system of administration carried out through offices, officials and rules",
+    "part_of_speech": "noun",
+    "example_sentence": "The new process reduced delays caused by bureaucracy.",
+    "syllables": [
+      "bu",
+      "reau",
+      "cra",
+      "cy"
+    ],
+    "etymology": {
+      "summary": "It came from French bureaucratie, combining bureau (“office” or “desk”) with a Greek-derived suffix meaning “rule” or “power”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/bureaucracy"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "bureaucracy",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-027",
+    "word": "questionnaire",
+    "difficulty": "hard",
+    "definition": "a set of written questions used to collect information",
+    "part_of_speech": "noun",
+    "example_sentence": "Please fill in the questionnaire.",
+    "syllables": [
+      "ques",
+      "tion",
+      "naire"
+    ],
+    "etymology": {
+      "summary": "It came from French questionnaire, meaning a list of questions, from questionner, “to question”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/questionnaire"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "questionnaire",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-028",
+    "word": "accommodate",
+    "difficulty": "hard",
+    "definition": "to provide enough space for someone or something; or to adjust to a need",
+    "part_of_speech": "verb",
+    "example_sentence": "The hall can accommodate two hundred guests.",
+    "syllables": [
+      "ac",
+      "com",
+      "mo",
+      "date"
+    ],
+    "etymology": {
+      "summary": "It comes from Latin accommodare, “to make fit” or “adapt”, from ad- (“to”) and commodare (“to make fit” or “suit”).",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/accommodate"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "accommodate",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-029",
+    "word": "entrepreneur",
+    "difficulty": "hard",
+    "definition": "a person who starts or runs a business, usually taking responsibility for its risks",
+    "part_of_speech": "noun",
+    "example_sentence": "The entrepreneur opened a small bookshop.",
+    "syllables": [
+      "en",
+      "tre",
+      "pre",
+      "neur"
+    ],
+    "etymology": {
+      "summary": "It came from French entrepreneur, “one who undertakes or manages”, from entreprendre, “to undertake”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/entrepreneur"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "entrepreneur",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-030",
+    "word": "conscientious",
+    "difficulty": "hard",
+    "definition": "careful to do things correctly and responsibly",
+    "part_of_speech": "adjective",
+    "example_sentence": "A conscientious pupil checks each answer.",
+    "syllables": [
+      "con",
+      "sci",
+      "en",
+      "tious"
+    ],
+    "etymology": {
+      "summary": "It came through French conscientieux from Latin conscientia, “conscience” or “moral awareness”.",
+      "source_notes": [
+        "Checked against Online Etymology Dictionary: https://www.etymonline.com/word/conscientious"
+      ],
+      "verification_status": "verified"
+    },
+    "pronunciation": {
+      "text": "conscientious",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-031",
+    "word": "address",
+    "difficulty": "easy",
+    "definition": "the details of where someone lives or where a letter should be sent",
+    "part_of_speech": "noun",
+    "example_sentence": "Write the school’s address on the form.",
+    "syllables": [
+      "ad",
+      "dress"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "address",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-032",
+    "word": "appear",
+    "difficulty": "easy",
+    "definition": "to become visible or to seem a certain way",
+    "part_of_speech": "verb",
+    "example_sentence": "The stars appear after sunset.",
+    "syllables": [
+      "ap",
+      "pear"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "appear",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-033",
+    "word": "arrive",
+    "difficulty": "easy",
+    "definition": "to reach a place",
+    "part_of_speech": "verb",
+    "example_sentence": "We arrive at school before the bell rings.",
+    "syllables": [
+      "ar",
+      "rive"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "arrive",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-034",
+    "word": "bicycle",
+    "difficulty": "easy",
+    "definition": "a vehicle with two wheels that a person pedals",
+    "part_of_speech": "noun",
+    "example_sentence": "She rides her bicycle to the park.",
+    "syllables": [
+      "bi",
+      "cy",
+      "cle"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "bicycle",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-035",
+    "word": "breath",
+    "difficulty": "easy",
+    "definition": "the air taken into or sent out of the lungs",
+    "part_of_speech": "noun",
+    "example_sentence": "Take a deep breath before you begin.",
+    "syllables": [
+      "breath"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "breath",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-036",
+    "word": "breathe",
+    "difficulty": "easy",
+    "definition": "to take air into the lungs and let it out",
+    "part_of_speech": "verb",
+    "example_sentence": "Remember to breathe slowly while you run.",
+    "syllables": [
+      "breathe"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "breathe",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-037",
+    "word": "build",
+    "difficulty": "easy",
+    "definition": "to make something by joining materials together",
+    "part_of_speech": "verb",
+    "example_sentence": "They will build a new classroom.",
+    "syllables": [
+      "build"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "build",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-038",
+    "word": "busy",
+    "difficulty": "easy",
+    "definition": "having a lot to do",
+    "part_of_speech": "adjective",
+    "example_sentence": "The shop is busy on market days.",
+    "syllables": [
+      "bus",
+      "y"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "busy",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-039",
+    "word": "caught",
+    "difficulty": "easy",
+    "definition": "past tense and past participle of catch",
+    "part_of_speech": "verb",
+    "example_sentence": "He caught the ball with both hands.",
+    "syllables": [
+      "caught"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "caught",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-040",
+    "word": "centre",
+    "difficulty": "easy",
+    "definition": "the middle point or part of something",
+    "part_of_speech": "noun",
+    "example_sentence": "Meet me at the centre of the room.",
+    "syllables": [
+      "cen",
+      "tre"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "centre",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-041",
+    "word": "century",
+    "difficulty": "easy",
+    "definition": "a period of one hundred years",
+    "part_of_speech": "noun",
+    "example_sentence": "The building is more than a century old.",
+    "syllables": [
+      "cen",
+      "tu",
+      "ry"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "century",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-042",
+    "word": "certain",
+    "difficulty": "easy",
+    "definition": "sure about something; or particular but not named",
+    "part_of_speech": "adjective",
+    "example_sentence": "I am certain that I locked the door.",
+    "syllables": [
+      "cer",
+      "tain"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "certain",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-043",
+    "word": "circle",
+    "difficulty": "easy",
+    "definition": "a round shape in which every point is equally distant from the centre",
+    "part_of_speech": "noun",
+    "example_sentence": "Draw a circle around the correct answer.",
+    "syllables": [
+      "cir",
+      "cle"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "circle",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-044",
+    "word": "complete",
+    "difficulty": "easy",
+    "definition": "having all the parts that are needed",
+    "part_of_speech": "adjective",
+    "example_sentence": "The puzzle is now complete.",
+    "syllables": [
+      "com",
+      "plete"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "complete",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-045",
+    "word": "consider",
+    "difficulty": "easy",
+    "definition": "to think carefully about something",
+    "part_of_speech": "verb",
+    "example_sentence": "Consider all the options before choosing.",
+    "syllables": [
+      "con",
+      "sid",
+      "er"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "consider",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-046",
+    "word": "continue",
+    "difficulty": "easy",
+    "definition": "to keep doing something without stopping",
+    "part_of_speech": "verb",
+    "example_sentence": "Please continue reading the passage.",
+    "syllables": [
+      "con",
+      "tin",
+      "ue"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "continue",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-047",
+    "word": "decide",
+    "difficulty": "easy",
+    "definition": "to choose after thinking about the choices",
+    "part_of_speech": "verb",
+    "example_sentence": "We must decide which book to read.",
+    "syllables": [
+      "de",
+      "cide"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "decide",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-048",
+    "word": "describe",
+    "difficulty": "easy",
+    "definition": "to say or write what someone or something is like",
+    "part_of_speech": "verb",
+    "example_sentence": "Describe what you saw on your way home.",
+    "syllables": [
+      "de",
+      "scribe"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "describe",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-049",
+    "word": "difficult",
+    "difficulty": "easy",
+    "definition": "not easy to do, understand or solve",
+    "part_of_speech": "adjective",
+    "example_sentence": "The final question was difficult.",
+    "syllables": [
+      "dif",
+      "fi",
+      "cult"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "difficult",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-050",
+    "word": "early",
+    "difficulty": "easy",
+    "definition": "before the usual or expected time",
+    "part_of_speech": "adverb",
+    "example_sentence": "The bus arrived early this morning.",
+    "syllables": [
+      "ear",
+      "ly"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "early",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-051",
+    "word": "earth",
+    "difficulty": "easy",
+    "definition": "the planet on which people, animals and plants live",
+    "part_of_speech": "noun",
+    "example_sentence": "The Earth moves around the Sun.",
+    "syllables": [
+      "earth"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "earth",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-052",
+    "word": "eight",
+    "difficulty": "easy",
+    "definition": "the number after seven and before nine",
+    "part_of_speech": "numeral",
+    "example_sentence": "Eight pupils took part in the reading contest.",
+    "syllables": [
+      "eight"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "eight",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-053",
+    "word": "enough",
+    "difficulty": "easy",
+    "definition": "as much or as many as is needed",
+    "part_of_speech": "determiner",
+    "example_sentence": "We have enough chairs for everyone.",
+    "syllables": [
+      "e",
+      "nough"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "enough",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-054",
+    "word": "exercise",
+    "difficulty": "easy",
+    "definition": "physical activity done to keep the body fit; or a task for practice",
+    "part_of_speech": "noun",
+    "example_sentence": "Walking is a simple form of exercise.",
+    "syllables": [
+      "ex",
+      "er",
+      "cise"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "exercise",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-055",
+    "word": "famous",
+    "difficulty": "easy",
+    "definition": "known by many people",
+    "part_of_speech": "adjective",
+    "example_sentence": "The town is famous for its festival.",
+    "syllables": [
+      "fa",
+      "mous"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "famous",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-056",
+    "word": "favourite",
+    "difficulty": "easy",
+    "definition": "liked more than the others",
+    "part_of_speech": "adjective",
+    "example_sentence": "Blue is my favourite colour.",
+    "syllables": [
+      "fa",
+      "vour",
+      "ite"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "favourite",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-057",
+    "word": "forward",
+    "difficulty": "easy",
+    "definition": "towards the front",
+    "part_of_speech": "adverb",
+    "example_sentence": "Please move one step forward.",
+    "syllables": [
+      "for",
+      "ward"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "forward",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-058",
+    "word": "fruit",
+    "difficulty": "easy",
+    "definition": "the part of a plant that contains seeds and can be eaten",
+    "part_of_speech": "noun",
+    "example_sentence": "Mango is my favourite fruit.",
+    "syllables": [
+      "fruit"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "fruit",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-059",
+    "word": "group",
+    "difficulty": "easy",
+    "definition": "a number of people or things considered together",
+    "part_of_speech": "noun",
+    "example_sentence": "Our group worked on the project.",
+    "syllables": [
+      "group"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "group",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-060",
+    "word": "guard",
+    "difficulty": "easy",
+    "definition": "a person whose job is to protect a place or people",
+    "part_of_speech": "noun",
+    "example_sentence": "The guard checked the gate.",
+    "syllables": [
+      "guard"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "guard",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-061",
+    "word": "guide",
+    "difficulty": "easy",
+    "definition": "a person who shows others the way or explains a place",
+    "part_of_speech": "noun",
+    "example_sentence": "Our guide explained the museum rules.",
+    "syllables": [
+      "guide"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "guide",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-062",
+    "word": "heard",
+    "difficulty": "easy",
+    "definition": "past tense and past participle of hear",
+    "part_of_speech": "verb",
+    "example_sentence": "I heard the announcement clearly.",
+    "syllables": [
+      "heard"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "heard",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-063",
+    "word": "heart",
+    "difficulty": "easy",
+    "definition": "the organ that pumps blood around the body",
+    "part_of_speech": "noun",
+    "example_sentence": "The heart pumps blood through the body.",
+    "syllables": [
+      "heart"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "heart",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-064",
+    "word": "height",
+    "difficulty": "easy",
+    "definition": "how tall or high someone or something is",
+    "part_of_speech": "noun",
+    "example_sentence": "Measure the height of the door.",
+    "syllables": [
+      "height"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "height",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-065",
+    "word": "history",
+    "difficulty": "easy",
+    "definition": "the study or record of events in the past",
+    "part_of_speech": "noun",
+    "example_sentence": "We studied the history of our town.",
+    "syllables": [
+      "his",
+      "to",
+      "ry"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "history",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-066",
+    "word": "imagine",
+    "difficulty": "easy",
+    "definition": "to form a picture or idea in your mind",
+    "part_of_speech": "verb",
+    "example_sentence": "Imagine a house built among the trees.",
+    "syllables": [
+      "i",
+      "mag",
+      "ine"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "imagine",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-067",
+    "word": "increase",
+    "difficulty": "easy",
+    "definition": "to become greater in number, size or amount; or to make greater",
+    "part_of_speech": "verb",
+    "example_sentence": "The school plans to increase its library books.",
+    "syllables": [
+      "in",
+      "crease"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "increase",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-068",
+    "word": "important",
+    "difficulty": "easy",
+    "definition": "having great value or meaning",
+    "part_of_speech": "adjective",
+    "example_sentence": "It is important to check your work.",
+    "syllables": [
+      "im",
+      "por",
+      "tant"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "important",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-069",
+    "word": "interest",
+    "difficulty": "easy",
+    "definition": "a feeling of wanting to know or learn about something",
+    "part_of_speech": "noun",
+    "example_sentence": "She has an interest in science.",
+    "syllables": [
+      "in",
+      "ter",
+      "est"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "interest",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-070",
+    "word": "island",
+    "difficulty": "easy",
+    "definition": "an area of land surrounded by water",
+    "part_of_speech": "noun",
+    "example_sentence": "The island is surrounded by the sea.",
+    "syllables": [
+      "is",
+      "land"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "island",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-071",
+    "word": "learn",
+    "difficulty": "easy",
+    "definition": "to gain knowledge or a skill by studying or practising",
+    "part_of_speech": "verb",
+    "example_sentence": "We learn something new every day.",
+    "syllables": [
+      "learn"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "learn",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-072",
+    "word": "length",
+    "difficulty": "easy",
+    "definition": "the measurement of how long something is",
+    "part_of_speech": "noun",
+    "example_sentence": "Measure the length of the table.",
+    "syllables": [
+      "length"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "length",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-073",
+    "word": "medicine",
+    "difficulty": "easy",
+    "definition": "a substance used to treat or prevent illness",
+    "part_of_speech": "noun",
+    "example_sentence": "The doctor prescribed medicine for the infection.",
+    "syllables": [
+      "med",
+      "i",
+      "cine"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "medicine",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-074",
+    "word": "mention",
+    "difficulty": "easy",
+    "definition": "to speak or write about something briefly",
+    "part_of_speech": "verb",
+    "example_sentence": "Please mention your name before you begin.",
+    "syllables": [
+      "men",
+      "tion"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "mention",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-075",
+    "word": "minute",
+    "difficulty": "easy",
+    "definition": "a period of sixty seconds",
+    "part_of_speech": "noun",
+    "example_sentence": "Wait here for one minute.",
+    "syllables": [
+      "min",
+      "ute"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "minute",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-076",
+    "word": "natural",
+    "difficulty": "easy",
+    "definition": "existing in nature and not made by people",
+    "part_of_speech": "adjective",
+    "example_sentence": "The park protects natural habitats.",
+    "syllables": [
+      "nat",
+      "u",
+      "ral"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "natural",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-077",
+    "word": "notice",
+    "difficulty": "easy",
+    "definition": "to see or become aware of something",
+    "part_of_speech": "verb",
+    "example_sentence": "Did you notice the spelling mistake?",
+    "syllables": [
+      "no",
+      "tice"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "notice",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-078",
+    "word": "often",
+    "difficulty": "easy",
+    "definition": "many times; frequently",
+    "part_of_speech": "adverb",
+    "example_sentence": "We often read after lunch.",
+    "syllables": [
+      "of",
+      "ten"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "often",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-079",
+    "word": "opposite",
+    "difficulty": "easy",
+    "definition": "on the other side or completely different",
+    "part_of_speech": "adjective",
+    "example_sentence": "The pharmacy is opposite the bank.",
+    "syllables": [
+      "op",
+      "po",
+      "site"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "opposite",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-080",
+    "word": "ordinary",
+    "difficulty": "easy",
+    "definition": "usual and not special or different",
+    "part_of_speech": "adjective",
+    "example_sentence": "It was an ordinary school day.",
+    "syllables": [
+      "or",
+      "di",
+      "na",
+      "ry"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "ordinary",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-081",
+    "word": "popular",
+    "difficulty": "easy",
+    "definition": "liked or enjoyed by many people",
+    "part_of_speech": "adjective",
+    "example_sentence": "The story is popular with young readers.",
+    "syllables": [
+      "pop",
+      "u",
+      "lar"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "popular",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-082",
+    "word": "position",
+    "difficulty": "easy",
+    "definition": "the place where someone or something is",
+    "part_of_speech": "noun",
+    "example_sentence": "Put the chair in its correct position.",
+    "syllables": [
+      "po",
+      "si",
+      "tion"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "position",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-083",
+    "word": "possible",
+    "difficulty": "easy",
+    "definition": "able to happen or be done",
+    "part_of_speech": "adjective",
+    "example_sentence": "It is possible to finish the task today.",
+    "syllables": [
+      "pos",
+      "si",
+      "ble"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "possible",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-084",
+    "word": "promise",
+    "difficulty": "easy",
+    "definition": "to say that you will certainly do something",
+    "part_of_speech": "verb",
+    "example_sentence": "I promise to return the book tomorrow.",
+    "syllables": [
+      "prom",
+      "ise"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "promise",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-085",
+    "word": "purpose",
+    "difficulty": "easy",
+    "definition": "the reason why something is done or used",
+    "part_of_speech": "noun",
+    "example_sentence": "The purpose of the exercise is to practise spelling.",
+    "syllables": [
+      "pur",
+      "pose"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "purpose",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-086",
+    "word": "question",
+    "difficulty": "easy",
+    "definition": "a sentence or statement used to ask for information",
+    "part_of_speech": "noun",
+    "example_sentence": "Ask your teacher if you have a question.",
+    "syllables": [
+      "ques",
+      "tion"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "question",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-087",
+    "word": "sentence",
+    "difficulty": "easy",
+    "definition": "a group of words that expresses a complete thought",
+    "part_of_speech": "noun",
+    "example_sentence": "Write one sentence using the new word.",
+    "syllables": [
+      "sen",
+      "tence"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "sentence",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-088",
+    "word": "accident",
+    "difficulty": "medium",
+    "definition": "an event that happens unexpectedly, often causing damage or injury",
+    "part_of_speech": "noun",
+    "example_sentence": "The bicycle was damaged in an accident.",
+    "syllables": [
+      "ac",
+      "ci",
+      "dent"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "accident",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-089",
+    "word": "actually",
+    "difficulty": "medium",
+    "definition": "used to add emphasis or to show what is true",
+    "part_of_speech": "adverb",
+    "example_sentence": "I thought the test was tomorrow, but it is actually today.",
+    "syllables": [
+      "ac",
+      "tu",
+      "al",
+      "ly"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "actually",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-090",
+    "word": "although",
+    "difficulty": "medium",
+    "definition": "used to introduce a contrast or an unexpected result",
+    "part_of_speech": "conjunction",
+    "example_sentence": "Although it was raining, the match continued.",
+    "syllables": [
+      "al",
+      "though"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "although",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-091",
+    "word": "ancient",
+    "difficulty": "medium",
+    "definition": "belonging to a very long time ago",
+    "part_of_speech": "adjective",
+    "example_sentence": "The museum displayed an ancient pot.",
+    "syllables": [
+      "an",
+      "cient"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "ancient",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-092",
+    "word": "available",
+    "difficulty": "medium",
+    "definition": "able to be used, obtained or reached",
+    "part_of_speech": "adjective",
+    "example_sentence": "The books are available in the library.",
+    "syllables": [
+      "a",
+      "vail",
+      "a",
+      "ble"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "available",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-093",
+    "word": "average",
+    "difficulty": "medium",
+    "definition": "the usual or typical amount; or calculated by adding values and dividing by their number",
+    "part_of_speech": "noun",
+    "example_sentence": "The average score was seventy per cent.",
+    "syllables": [
+      "av",
+      "er",
+      "age"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "average",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-094",
+    "word": "bargain",
+    "difficulty": "medium",
+    "definition": "something bought for less than its usual price",
+    "part_of_speech": "noun",
+    "example_sentence": "She found a good bargain at the market.",
+    "syllables": [
+      "bar",
+      "gain"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "bargain",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-095",
+    "word": "bruise",
+    "difficulty": "medium",
+    "definition": "a mark on the skin caused by a blow",
+    "part_of_speech": "noun",
+    "example_sentence": "He had a small bruise on his arm.",
+    "syllables": [
+      "bruise"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "bruise",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-096",
+    "word": "category",
+    "difficulty": "medium",
+    "definition": "a group of people or things with a shared feature",
+    "part_of_speech": "noun",
+    "example_sentence": "Place each word in the correct category.",
+    "syllables": [
+      "cat",
+      "e",
+      "go",
+      "ry"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "category",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-097",
+    "word": "committee",
+    "difficulty": "medium",
+    "definition": "a group of people chosen to make decisions or do a particular task",
+    "part_of_speech": "noun",
+    "example_sentence": "The committee organised the school event.",
+    "syllables": [
+      "com",
+      "mit",
+      "tee"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "committee",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-098",
+    "word": "communicate",
+    "difficulty": "medium",
+    "definition": "to share information, ideas or feelings with someone",
+    "part_of_speech": "verb",
+    "example_sentence": "Good teammates communicate clearly.",
+    "syllables": [
+      "com",
+      "mu",
+      "ni",
+      "cate"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "communicate",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-099",
+    "word": "community",
+    "difficulty": "medium",
+    "definition": "the people who live in a particular area or share an interest",
+    "part_of_speech": "noun",
+    "example_sentence": "The community cleaned the local park.",
+    "syllables": [
+      "com",
+      "mu",
+      "ni",
+      "ty"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "community",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-100",
+    "word": "competition",
+    "difficulty": "medium",
+    "definition": "an event in which people try to do better than others",
+    "part_of_speech": "noun",
+    "example_sentence": "She entered the spelling competition.",
+    "syllables": [
+      "com",
+      "pe",
+      "ti",
+      "tion"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "competition",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-101",
+    "word": "desperate",
+    "difficulty": "medium",
+    "definition": "feeling that something must happen because the situation is very difficult",
+    "part_of_speech": "adjective",
+    "example_sentence": "They were desperate to find the missing document.",
+    "syllables": [
+      "des",
+      "per",
+      "ate"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "desperate",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-102",
+    "word": "dictionary",
+    "difficulty": "medium",
+    "definition": "a book or digital resource that gives word meanings and other information",
+    "part_of_speech": "noun",
+    "example_sentence": "Look up the word in a dictionary.",
+    "syllables": [
+      "dic",
+      "tion",
+      "ar",
+      "y"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "dictionary",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-103",
+    "word": "disappear",
+    "difficulty": "medium",
+    "definition": "to stop being visible or to go missing",
+    "part_of_speech": "verb",
+    "example_sentence": "The clouds began to disappear.",
+    "syllables": [
+      "dis",
+      "ap",
+      "pear"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "disappear",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-104",
+    "word": "embarrass",
+    "difficulty": "medium",
+    "definition": "to make someone feel awkward or ashamed",
+    "part_of_speech": "verb",
+    "example_sentence": "Please do not embarrass your friend.",
+    "syllables": [
+      "em",
+      "bar",
+      "rass"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "embarrass",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-105",
+    "word": "especially",
+    "difficulty": "medium",
+    "definition": "more than usual or more than others",
+    "part_of_speech": "adverb",
+    "example_sentence": "I enjoy fruit, especially oranges.",
+    "syllables": [
+      "es",
+      "pe",
+      "cial",
+      "ly"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "especially",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-106",
+    "word": "excellent",
+    "difficulty": "medium",
+    "definition": "extremely good",
+    "part_of_speech": "adjective",
+    "example_sentence": "You did an excellent job on the project.",
+    "syllables": [
+      "ex",
+      "cel",
+      "lent"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "excellent",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-107",
+    "word": "explanation",
+    "difficulty": "medium",
+    "definition": "a statement that makes something clear or gives a reason",
+    "part_of_speech": "noun",
+    "example_sentence": "The teacher gave an explanation of the rule.",
+    "syllables": [
+      "ex",
+      "pla",
+      "na",
+      "tion"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "explanation",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-108",
+    "word": "familiar",
+    "difficulty": "medium",
+    "definition": "well known or easily recognised",
+    "part_of_speech": "adjective",
+    "example_sentence": "That song sounds familiar.",
+    "syllables": [
+      "fa",
+      "mil",
+      "iar"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "familiar",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-109",
+    "word": "forty",
+    "difficulty": "medium",
+    "definition": "the number after thirty-nine and before forty-one",
+    "part_of_speech": "numeral",
+    "example_sentence": "Forty pupils attended the assembly.",
+    "syllables": [
+      "for",
+      "ty"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "forty",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-110",
+    "word": "identity",
+    "difficulty": "medium",
+    "definition": "the qualities and details that make a person or thing recognisable",
+    "part_of_speech": "noun",
+    "example_sentence": "The form asks for proof of identity.",
+    "syllables": [
+      "i",
+      "den",
+      "ti",
+      "ty"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "identity",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-111",
+    "word": "immediate",
+    "difficulty": "medium",
+    "definition": "happening or done without delay",
+    "part_of_speech": "adjective",
+    "example_sentence": "The school needed an immediate answer.",
+    "syllables": [
+      "im",
+      "me",
+      "di",
+      "ate"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "immediate",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-112",
+    "word": "interfere",
+    "difficulty": "medium",
+    "definition": "to become involved in a situation in a way that is unwanted",
+    "part_of_speech": "verb",
+    "example_sentence": "Do not interfere with another group's work.",
+    "syllables": [
+      "in",
+      "ter",
+      "fere"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "interfere",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-113",
+    "word": "interrupt",
+    "difficulty": "medium",
+    "definition": "to stop someone while they are speaking or doing something",
+    "part_of_speech": "verb",
+    "example_sentence": "Please do not interrupt the speaker.",
+    "syllables": [
+      "in",
+      "ter",
+      "rupt"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "interrupt",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-114",
+    "word": "language",
+    "difficulty": "medium",
+    "definition": "a system of words and rules used by a group to communicate",
+    "part_of_speech": "noun",
+    "example_sentence": "English is the language of the lesson.",
+    "syllables": [
+      "lan",
+      "guage"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "language",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-115",
+    "word": "lightning",
+    "difficulty": "medium",
+    "definition": "a bright flash of electricity in the sky during a storm",
+    "part_of_speech": "noun",
+    "example_sentence": "Lightning lit up the sky.",
+    "syllables": [
+      "light",
+      "ning"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "lightning",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-116",
+    "word": "marvellous",
+    "difficulty": "medium",
+    "definition": "extremely good or enjoyable",
+    "part_of_speech": "adjective",
+    "example_sentence": "We had a marvellous time at the museum.",
+    "syllables": [
+      "mar",
+      "vel",
+      "lous"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "marvellous",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-117",
+    "word": "muscle",
+    "difficulty": "medium",
+    "definition": "a part of the body that helps it move",
+    "part_of_speech": "noun",
+    "example_sentence": "Exercise can make muscles stronger.",
+    "syllables": [
+      "mus",
+      "cle"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "muscle",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-118",
+    "word": "neighbour",
+    "difficulty": "medium",
+    "definition": "a person who lives near you",
+    "part_of_speech": "noun",
+    "example_sentence": "Our neighbour helped carry the boxes.",
+    "syllables": [
+      "neigh",
+      "bour"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "neighbour",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-119",
+    "word": "nuisance",
+    "difficulty": "medium",
+    "definition": "a person or thing that causes trouble or annoyance",
+    "part_of_speech": "noun",
+    "example_sentence": "The broken alarm became a nuisance.",
+    "syllables": [
+      "nui",
+      "sance"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "nuisance",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-120",
+    "word": "occupy",
+    "difficulty": "medium",
+    "definition": "to live in, use or take up a place or space",
+    "part_of_speech": "verb",
+    "example_sentence": "The desks occupy most of the classroom.",
+    "syllables": [
+      "oc",
+      "cu",
+      "py"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "occupy",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-121",
+    "word": "opportunity",
+    "difficulty": "medium",
+    "definition": "a suitable time or chance to do something",
+    "part_of_speech": "noun",
+    "example_sentence": "The competition is an opportunity to learn.",
+    "syllables": [
+      "op",
+      "por",
+      "tu",
+      "ni",
+      "ty"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "opportunity",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-122",
+    "word": "persuade",
+    "difficulty": "medium",
+    "definition": "to make someone agree to do something by giving reasons",
+    "part_of_speech": "verb",
+    "example_sentence": "She tried to persuade her brother to join the team.",
+    "syllables": [
+      "per",
+      "suade"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "persuade",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-123",
+    "word": "shoulder",
+    "difficulty": "medium",
+    "definition": "the part of the body where the arm joins the upper body",
+    "part_of_speech": "noun",
+    "example_sentence": "He carried the bag over his shoulder.",
+    "syllables": [
+      "shoul",
+      "der"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "shoulder",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-124",
+    "word": "stomach",
+    "difficulty": "medium",
+    "definition": "the organ where food is partly digested",
+    "part_of_speech": "noun",
+    "example_sentence": "The stomach helps digest food.",
+    "syllables": [
+      "stom",
+      "ach"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "stomach",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-125",
+    "word": "occasion",
+    "difficulty": "medium",
+    "definition": "a particular time or event",
+    "part_of_speech": "noun",
+    "example_sentence": "We wore our uniforms for the special occasion.",
+    "syllables": [
+      "oc",
+      "ca",
+      "sion"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "occasion",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-126",
+    "word": "particular",
+    "difficulty": "medium",
+    "definition": "specific or special, rather than general",
+    "part_of_speech": "adjective",
+    "example_sentence": "Is there a particular book you need?",
+    "syllables": [
+      "par",
+      "tic",
+      "u",
+      "lar"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "particular",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-127",
+    "word": "peculiar",
+    "difficulty": "medium",
+    "definition": "strange or unusual",
+    "part_of_speech": "adjective",
+    "example_sentence": "There was a peculiar sound outside.",
+    "syllables": [
+      "pe",
+      "cul",
+      "iar"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "peculiar",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-128",
+    "word": "perhaps",
+    "difficulty": "medium",
+    "definition": "possibly; maybe",
+    "part_of_speech": "adverb",
+    "example_sentence": "Perhaps we can visit the library tomorrow.",
+    "syllables": [
+      "per",
+      "haps"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "perhaps",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-129",
+    "word": "potatoes",
+    "difficulty": "medium",
+    "definition": "plural of potato; edible underground parts of a plant",
+    "part_of_speech": "noun",
+    "example_sentence": "The farmer harvested potatoes.",
+    "syllables": [
+      "po",
+      "ta",
+      "toes"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "potatoes",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-130",
+    "word": "pressure",
+    "difficulty": "medium",
+    "definition": "the force placed on something; or stress caused by demands",
+    "part_of_speech": "noun",
+    "example_sentence": "The water pressure was low.",
+    "syllables": [
+      "pres",
+      "sure"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "pressure",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-131",
+    "word": "probably",
+    "difficulty": "medium",
+    "definition": "almost certainly; very likely",
+    "part_of_speech": "adverb",
+    "example_sentence": "It will probably rain this evening.",
+    "syllables": [
+      "prob",
+      "a",
+      "bly"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "probably",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-132",
+    "word": "recent",
+    "difficulty": "medium",
+    "definition": "happening or done not long ago",
+    "part_of_speech": "adjective",
+    "example_sentence": "We discussed a recent discovery.",
+    "syllables": [
+      "re",
+      "cent"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "recent",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-133",
+    "word": "regular",
+    "difficulty": "medium",
+    "definition": "happening often or at fixed times; usual",
+    "part_of_speech": "adjective",
+    "example_sentence": "Regular practice can help you learn.",
+    "syllables": [
+      "reg",
+      "u",
+      "lar"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "regular",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-134",
+    "word": "reign",
+    "difficulty": "medium",
+    "definition": "the period during which a king or queen rules",
+    "part_of_speech": "noun",
+    "example_sentence": "The queen's reign lasted many years.",
+    "syllables": [
+      "reign"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "reign",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-135",
+    "word": "remember",
+    "difficulty": "medium",
+    "definition": "to keep something in your mind or bring it back to mind",
+    "part_of_speech": "verb",
+    "example_sentence": "Remember to check your spelling.",
+    "syllables": [
+      "re",
+      "mem",
+      "ber"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "remember",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-136",
+    "word": "straight",
+    "difficulty": "medium",
+    "definition": "not bent or curved; or directly",
+    "part_of_speech": "adjective",
+    "example_sentence": "Draw a straight line across the page.",
+    "syllables": [
+      "straight"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "straight",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-137",
+    "word": "surprise",
+    "difficulty": "medium",
+    "definition": "an unexpected event or feeling; or to cause that feeling",
+    "part_of_speech": "noun",
+    "example_sentence": "The class prepared a surprise for their teacher.",
+    "syllables": [
+      "sur",
+      "prise"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "surprise",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-138",
+    "word": "therefore",
+    "difficulty": "medium",
+    "definition": "for that reason; as a result",
+    "part_of_speech": "adverb",
+    "example_sentence": "The road was closed; therefore, we took another route.",
+    "syllables": [
+      "there",
+      "fore"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "therefore",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-139",
+    "word": "though",
+    "difficulty": "medium",
+    "definition": "despite the fact that; although",
+    "part_of_speech": "conjunction",
+    "example_sentence": "Though it was late, she finished her reading.",
+    "syllables": [
+      "though"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "though",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-140",
+    "word": "thought",
+    "difficulty": "medium",
+    "definition": "an idea or opinion; or the past tense of think",
+    "part_of_speech": "noun",
+    "example_sentence": "I had a thought about the puzzle.",
+    "syllables": [
+      "thought"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "thought",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-141",
+    "word": "through",
+    "difficulty": "medium",
+    "definition": "from one end or side to the other; or during the whole of a period",
+    "part_of_speech": "preposition",
+    "example_sentence": "We walked through the school gate.",
+    "syllables": [
+      "through"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "through",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-142",
+    "word": "weight",
+    "difficulty": "medium",
+    "definition": "how heavy someone or something is",
+    "part_of_speech": "noun",
+    "example_sentence": "The parcel's weight was written on the label.",
+    "syllables": [
+      "weight"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "weight",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-143",
+    "word": "leisure",
+    "difficulty": "medium",
+    "definition": "time when you are free from work or duties",
+    "part_of_speech": "noun",
+    "example_sentence": "He enjoys reading in his leisure time.",
+    "syllables": [
+      "lei",
+      "sure"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "leisure",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-144",
+    "word": "physical",
+    "difficulty": "medium",
+    "definition": "relating to the body or to things that can be touched",
+    "part_of_speech": "adjective",
+    "example_sentence": "Physical activity is part of the school timetable.",
+    "syllables": [
+      "phys",
+      "i",
+      "cal"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "physical",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-145",
+    "word": "aggressive",
+    "difficulty": "hard",
+    "definition": "ready to argue, fight or use force; forceful",
+    "part_of_speech": "adjective",
+    "example_sentence": "The dog became aggressive when it felt threatened.",
+    "syllables": [
+      "ag",
+      "gres",
+      "sive"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "aggressive",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-146",
+    "word": "amateur",
+    "difficulty": "hard",
+    "definition": "a person who takes part in an activity for enjoyment rather than as a job",
+    "part_of_speech": "noun",
+    "example_sentence": "The amateur photographer displayed her pictures.",
+    "syllables": [
+      "am",
+      "a",
+      "teur"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "amateur",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-147",
+    "word": "apparent",
+    "difficulty": "hard",
+    "definition": "easy to see or understand; seeming to be true",
+    "part_of_speech": "adjective",
+    "example_sentence": "It became apparent that the team needed more time.",
+    "syllables": [
+      "ap",
+      "par",
+      "ent"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "apparent",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-148",
+    "word": "atmosphere",
+    "difficulty": "hard",
+    "definition": "the layer of gases surrounding a planet; or the mood of a place",
+    "part_of_speech": "noun",
+    "example_sentence": "Earth's atmosphere contains the air we breathe.",
+    "syllables": [
+      "at",
+      "mos",
+      "phere"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "atmosphere",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-149",
+    "word": "conscious",
+    "difficulty": "hard",
+    "definition": "awake and aware of what is happening",
+    "part_of_speech": "adjective",
+    "example_sentence": "The patient was conscious and able to speak.",
+    "syllables": [
+      "con",
+      "scious"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "conscious",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-150",
+    "word": "controversy",
+    "difficulty": "hard",
+    "definition": "public disagreement about an issue",
+    "part_of_speech": "noun",
+    "example_sentence": "The decision caused controversy among the residents.",
+    "syllables": [
+      "con",
+      "tro",
+      "ver",
+      "sy"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "controversy",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-151",
+    "word": "criticise",
+    "difficulty": "hard",
+    "definition": "to say what you think is wrong with someone or something",
+    "part_of_speech": "verb",
+    "example_sentence": "It is easier to criticise than to offer a solution.",
+    "syllables": [
+      "crit",
+      "i",
+      "cise"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "criticise",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-152",
+    "word": "determined",
+    "difficulty": "hard",
+    "definition": "having made a firm decision and not giving up easily",
+    "part_of_speech": "adjective",
+    "example_sentence": "She was determined to finish the project.",
+    "syllables": [
+      "de",
+      "ter",
+      "mined"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "determined",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-153",
+    "word": "develop",
+    "difficulty": "hard",
+    "definition": "to grow, change or make something more advanced",
+    "part_of_speech": "verb",
+    "example_sentence": "The pupils will develop their reading skills.",
+    "syllables": [
+      "de",
+      "vel",
+      "op"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "develop",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-154",
+    "word": "exaggerate",
+    "difficulty": "hard",
+    "definition": "to describe something as larger, better or worse than it really is",
+    "part_of_speech": "verb",
+    "example_sentence": "Do not exaggerate what happened.",
+    "syllables": [
+      "ex",
+      "ag",
+      "ger",
+      "ate"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "exaggerate",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-155",
+    "word": "foreign",
+    "difficulty": "hard",
+    "definition": "from or belonging to another country",
+    "part_of_speech": "adjective",
+    "example_sentence": "The museum displayed foreign coins.",
+    "syllables": [
+      "for",
+      "eign"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "foreign",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-156",
+    "word": "fulfil",
+    "difficulty": "hard",
+    "definition": "to do or achieve what was promised or required",
+    "part_of_speech": "verb",
+    "example_sentence": "He worked hard to fulfil his promise.",
+    "syllables": [
+      "ful",
+      "fil"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "fulfil",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-157",
+    "word": "harass",
+    "difficulty": "hard",
+    "definition": "to repeatedly trouble or bother someone",
+    "part_of_speech": "verb",
+    "example_sentence": "The school has rules to prevent pupils from harassing others.",
+    "syllables": [
+      "har",
+      "ass"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "harass",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-158",
+    "word": "hindrance",
+    "difficulty": "hard",
+    "definition": "something or someone that makes progress difficult",
+    "part_of_speech": "noun",
+    "example_sentence": "The heavy rain was a hindrance to the journey.",
+    "syllables": [
+      "hin",
+      "drance"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "hindrance",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-159",
+    "word": "pronunciation",
+    "difficulty": "hard",
+    "definition": "the way in which a word or language is spoken",
+    "part_of_speech": "noun",
+    "example_sentence": "The dictionary provides the pronunciation of each word.",
+    "syllables": [
+      "pro",
+      "nun",
+      "ci",
+      "a",
+      "tion"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "pronunciation",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-160",
+    "word": "queue",
+    "difficulty": "hard",
+    "definition": "a line of people waiting for something",
+    "part_of_speech": "noun",
+    "example_sentence": "We joined the queue outside the hall.",
+    "syllables": [
+      "queue"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "queue",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-161",
+    "word": "recognise",
+    "difficulty": "hard",
+    "definition": "to know someone or something because you have seen or heard it before",
+    "part_of_speech": "verb",
+    "example_sentence": "I recognise that tune from the radio.",
+    "syllables": [
+      "rec",
+      "og",
+      "nise"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "recognise",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-162",
+    "word": "recommend",
+    "difficulty": "hard",
+    "definition": "to suggest that someone should choose or try something",
+    "part_of_speech": "verb",
+    "example_sentence": "The teacher will recommend a book for the class.",
+    "syllables": [
+      "rec",
+      "om",
+      "mend"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "recommend",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-163",
+    "word": "relevant",
+    "difficulty": "hard",
+    "definition": "closely connected with the subject being discussed",
+    "part_of_speech": "adjective",
+    "example_sentence": "Please include only relevant information.",
+    "syllables": [
+      "rel",
+      "e",
+      "vant"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "relevant",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-164",
+    "word": "rhyme",
+    "difficulty": "hard",
+    "definition": "a similarity in the ending sounds of words",
+    "part_of_speech": "noun",
+    "example_sentence": "The words 'bright' and 'light' rhyme.",
+    "syllables": [
+      "rhyme"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "rhyme",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-165",
+    "word": "sacrifice",
+    "difficulty": "hard",
+    "definition": "to give up something valuable for a more important reason",
+    "part_of_speech": "verb",
+    "example_sentence": "They had to sacrifice their free time to finish the project.",
+    "syllables": [
+      "sac",
+      "ri",
+      "fice"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "sacrifice",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-166",
+    "word": "signature",
+    "difficulty": "hard",
+    "definition": "a person's name written by that person",
+    "part_of_speech": "noun",
+    "example_sentence": "Please add your signature at the bottom of the form.",
+    "syllables": [
+      "sig",
+      "na",
+      "ture"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "signature",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-167",
+    "word": "significant",
+    "difficulty": "hard",
+    "definition": "important or large enough to have an effect",
+    "part_of_speech": "adjective",
+    "example_sentence": "The discovery was a significant achievement.",
+    "syllables": [
+      "sig",
+      "nif",
+      "i",
+      "cant"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "significant",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-168",
+    "word": "aloud",
+    "difficulty": "hard",
+    "definition": "in a voice that can be heard",
+    "part_of_speech": "adverb",
+    "example_sentence": "Please read the sentence aloud.",
+    "syllables": [
+      "a",
+      "loud"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "aloud",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-169",
+    "word": "sufficient",
+    "difficulty": "hard",
+    "definition": "as much as is needed; enough",
+    "part_of_speech": "adjective",
+    "example_sentence": "We have sufficient time to complete the task.",
+    "syllables": [
+      "suf",
+      "fi",
+      "cient"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "sufficient",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-170",
+    "word": "suggest",
+    "difficulty": "hard",
+    "definition": "to put forward an idea or plan for someone to consider",
+    "part_of_speech": "verb",
+    "example_sentence": "I suggest that we begin with the first question.",
+    "syllables": [
+      "sug",
+      "gest"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "suggest",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-171",
+    "word": "symbol",
+    "difficulty": "hard",
+    "definition": "a sign, mark or object that represents something",
+    "part_of_speech": "noun",
+    "example_sentence": "A dove is often used as a symbol of peace.",
+    "syllables": [
+      "sym",
+      "bol"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "symbol",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-172",
+    "word": "temperature",
+    "difficulty": "hard",
+    "definition": "a measure of how hot or cold something is",
+    "part_of_speech": "noun",
+    "example_sentence": "The nurse checked the child's temperature.",
+    "syllables": [
+      "tem",
+      "per",
+      "a",
+      "ture"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "temperature",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-173",
+    "word": "thorough",
+    "difficulty": "hard",
+    "definition": "careful and complete",
+    "part_of_speech": "adjective",
+    "example_sentence": "Give the report a thorough check before submitting it.",
+    "syllables": [
+      "thor",
+      "ough"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "thorough",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-174",
+    "word": "twelfth",
+    "difficulty": "hard",
+    "definition": "the number or position after eleventh and before thirteenth",
+    "part_of_speech": "ordinal numeral",
+    "example_sentence": "December is the twelfth month of the year.",
+    "syllables": [
+      "twelfth"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "twelfth",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-175",
+    "word": "variety",
+    "difficulty": "hard",
+    "definition": "a number of different types of the same general thing",
+    "part_of_speech": "noun",
+    "example_sentence": "The shop sells a variety of school supplies.",
+    "syllables": [
+      "va",
+      "ri",
+      "e",
+      "ty"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "variety",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-176",
+    "word": "vegetable",
+    "difficulty": "hard",
+    "definition": "a plant or part of a plant that is eaten as food",
+    "part_of_speech": "noun",
+    "example_sentence": "Carrot is a vegetable.",
+    "syllables": [
+      "veg",
+      "ta",
+      "ble"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "vegetable",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-177",
+    "word": "vehicle",
+    "difficulty": "hard",
+    "definition": "a machine used to carry people or goods, such as a car or bus",
+    "part_of_speech": "noun",
+    "example_sentence": "The vehicle stopped at the traffic light.",
+    "syllables": [
+      "ve",
+      "hi",
+      "cle"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "vehicle",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-178",
+    "word": "yacht",
+    "difficulty": "hard",
+    "definition": "a large boat used for pleasure or sport",
+    "part_of_speech": "noun",
+    "example_sentence": "The yacht sailed across the bay.",
+    "syllables": [
+      "yacht"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "yacht",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-179",
+    "word": "aisle",
+    "difficulty": "hard",
+    "definition": "a passage between rows of seats, shelves or other things",
+    "part_of_speech": "noun",
+    "example_sentence": "She walked down the aisle to her seat.",
+    "syllables": [
+      "aisle"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "aisle",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-180",
+    "word": "allowed",
+    "difficulty": "hard",
+    "definition": "past tense and past participle of allow; permitted",
+    "part_of_speech": "verb",
+    "example_sentence": "The teacher allowed us to use a dictionary.",
+    "syllables": [
+      "al",
+      "lowed"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "allowed",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-181",
+    "word": "altar",
+    "difficulty": "hard",
+    "definition": "a table or raised place used in some religious ceremonies",
+    "part_of_speech": "noun",
+    "example_sentence": "Flowers were placed beside the altar.",
+    "syllables": [
+      "al",
+      "tar"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "altar",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-182",
+    "word": "alter",
+    "difficulty": "hard",
+    "definition": "to change something",
+    "part_of_speech": "verb",
+    "example_sentence": "We had to alter the timetable.",
+    "syllables": [
+      "al",
+      "ter"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "alter",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-183",
+    "word": "ascent",
+    "difficulty": "hard",
+    "definition": "the act of climbing or moving upwards",
+    "part_of_speech": "noun",
+    "example_sentence": "The hikers began their ascent before sunrise.",
+    "syllables": [
+      "as",
+      "cent"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "ascent",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-184",
+    "word": "assent",
+    "difficulty": "hard",
+    "definition": "agreement or approval",
+    "part_of_speech": "noun",
+    "example_sentence": "The plan went ahead with the principal's assent.",
+    "syllables": [
+      "as",
+      "sent"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "assent",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-185",
+    "word": "bridal",
+    "difficulty": "hard",
+    "definition": "relating to a bride or a wedding",
+    "part_of_speech": "adjective",
+    "example_sentence": "The shop displayed a bridal dress.",
+    "syllables": [
+      "brid",
+      "al"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "bridal",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-186",
+    "word": "bridle",
+    "difficulty": "hard",
+    "definition": "a set of straps used to guide and control a horse",
+    "part_of_speech": "noun",
+    "example_sentence": "The rider checked the horse's bridle.",
+    "syllables": [
+      "brid",
+      "le"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "bridle",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-187",
+    "word": "cereal",
+    "difficulty": "hard",
+    "definition": "a plant grown for its edible grain, or food made from grain",
+    "part_of_speech": "noun",
+    "example_sentence": "She ate cereal for breakfast.",
+    "syllables": [
+      "ce",
+      "re",
+      "al"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "cereal",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-188",
+    "word": "serial",
+    "difficulty": "hard",
+    "definition": "a story or programme released in parts; or arranged in a series",
+    "part_of_speech": "noun",
+    "example_sentence": "We listened to a radio serial.",
+    "syllables": [
+      "se",
+      "ri",
+      "al"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "serial",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-189",
+    "word": "compliment",
+    "difficulty": "hard",
+    "definition": "a polite expression of praise or admiration",
+    "part_of_speech": "noun",
+    "example_sentence": "The coach gave the team a compliment.",
+    "syllables": [
+      "com",
+      "pli",
+      "ment"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "compliment",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-190",
+    "word": "complement",
+    "difficulty": "hard",
+    "definition": "something that completes or improves something else",
+    "part_of_speech": "noun",
+    "example_sentence": "The red scarf was a perfect complement to her coat.",
+    "syllables": [
+      "com",
+      "ple",
+      "ment"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "complement",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-191",
+    "word": "desert",
+    "difficulty": "hard",
+    "definition": "a very dry area of land with little rain",
+    "part_of_speech": "noun",
+    "example_sentence": "Few plants can survive in the desert.",
+    "syllables": [
+      "des",
+      "ert"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "desert",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-192",
+    "word": "dessert",
+    "difficulty": "hard",
+    "definition": "sweet food eaten at the end of a meal",
+    "part_of_speech": "noun",
+    "example_sentence": "Fruit was served for dessert.",
+    "syllables": [
+      "des",
+      "sert"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "dessert",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-193",
+    "word": "principal",
+    "difficulty": "hard",
+    "definition": "the head of a school; or most important",
+    "part_of_speech": "noun",
+    "example_sentence": "The principal addressed the pupils at assembly.",
+    "syllables": [
+      "prin",
+      "ci",
+      "pal"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "principal",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-194",
+    "word": "principle",
+    "difficulty": "hard",
+    "definition": "a basic rule, belief or idea",
+    "part_of_speech": "noun",
+    "example_sentence": "Honesty is an important principle.",
+    "syllables": [
+      "prin",
+      "ci",
+      "ple"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "principle",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-195",
+    "word": "stationary",
+    "difficulty": "hard",
+    "definition": "not moving",
+    "part_of_speech": "adjective",
+    "example_sentence": "The bus remained stationary at the stop.",
+    "syllables": [
+      "sta",
+      "tion",
+      "ar",
+      "y"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "stationary",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-196",
+    "word": "stationery",
+    "difficulty": "hard",
+    "definition": "materials used for writing, such as paper, pens and envelopes",
+    "part_of_speech": "noun",
+    "example_sentence": "She bought stationery for the new term.",
+    "syllables": [
+      "sta",
+      "tion",
+      "er",
+      "y"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "stationery",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-197",
+    "word": "steal",
+    "difficulty": "hard",
+    "definition": "to take something that belongs to someone else without permission",
+    "part_of_speech": "verb",
+    "example_sentence": "It is wrong to steal another person's property.",
+    "syllables": [
+      "steal"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "steal",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-198",
+    "word": "steel",
+    "difficulty": "hard",
+    "definition": "a strong metal made mainly from iron",
+    "part_of_speech": "noun",
+    "example_sentence": "The bridge is made of steel.",
+    "syllables": [
+      "steel"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "steel",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-199",
+    "word": "wary",
+    "difficulty": "hard",
+    "definition": "careful because you think there may be danger or a problem",
+    "part_of_speech": "adjective",
+    "example_sentence": "The wary cat stayed away from the noisy dog.",
+    "syllables": [
+      "war",
+      "y"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "wary",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  },
+  {
+    "id": "free-200",
+    "word": "weary",
+    "difficulty": "hard",
+    "definition": "very tired, especially after a lot of effort",
+    "part_of_speech": "adjective",
+    "example_sentence": "The weary travellers rested under a tree.",
+    "syllables": [
+      "wea",
+      "ry"
+    ],
+    "etymology": {
+      "summary": "",
+      "source_notes": [
+        "No etymology is supplied for this entry; do not display an origin claim."
+      ],
+      "verification_status": "not_supplied"
+    },
+    "pronunciation": {
+      "text": "weary",
+      "locale": "en",
+      "audio_url": null
+    },
+    "word_bank": "free"
+  }
 ]

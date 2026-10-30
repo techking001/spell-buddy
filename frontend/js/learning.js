@@ -71,8 +71,12 @@ function openWord(i) {
   renderSyllables(w);
   setText('lDef', w.definition, 'Not available');
   setText('lExample', w.example_sentence, 'Not available');
+
+  // The origin section only appears when a verified origin was actually supplied.
   const origin = speech.hasVerifiedOrigin(w) ? w.etymology.summary : '';
-  setText('lOrigin', origin, 'Origin not yet verified.');
+  setText('lOrigin', origin, '');
+  const originRow = $('lOrigin').closest('.info');
+  if (originRow) originRow.hidden = !origin;
 
   $('hearMeaning').hidden = !speech.phrases.meaning(w);
   $('hearSentence').hidden = !speech.phrases.sentence(w);

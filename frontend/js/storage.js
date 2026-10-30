@@ -70,30 +70,45 @@ export function clearProgress() {
   }
 }
 
+function applyAnswer(progress, { id, correct }) {
+  progress.totalAnswered += 1;
+  if (correct) {
+    progress.totalCorrect += 1;
+    delete progress.mistakes[id]; // answered correctly, so it leaves the mistakes list
+  } else {
+    progress.mistakes[id] = (progress.mistakes[id] || 0) + 1;
+  }
+}
+
+function pushSession(progress, { mode, difficulty, date, correct, total }) {
+  progress.sessions.push({ mode, difficulty, date, correct, total });
+  progress.sessions = progress.sessions.slice(-MAX_SESSIONS_KEPT);
+}
+
+// Used by Spelling Bee: records a finished round in one go.
 // session = { mode, difficulty, date, results: [{ id, correct }] }
 export function recordSession(session) {
   const progress = getProgress();
   let correct = 0;
-
   session.results.forEach((r) => {
-    progress.totalAnswered += 1;
-    if (r.correct) {
-      progress.totalCorrect += 1;
-      correct += 1;
-      delete progress.mistakes[r.id]; // answered correctly, so it leaves the mistakes list
-    } else {
-      progress.mistakes[r.id] = (progress.mistakes[r.id] || 0) + 1;
-    }
+    applyAnswer(progress, r);
+    if (r.correct) correct += 1;
   });
+  pushSession(progress, { ...session, correct, total: session.results.length });
+  return write(KEYS.progress, progress);
+}
 
-  progress.sessions.push({
-    mode: session.mode,
-    difficulty: session.difficulty,
-    date: session.date,
-    correct,
-    total: session.results.length,
-  });
-  progress.sessions = progress.sessions.slice(-MAX_SESSIONS_KEPT);
+// Used by continuous Practice: saves each answer straight away,
+// so nothing is lost if the pupil leaves the page at any moment.
+export function recordAnswer(result) {
+  const progress = getProgress();
+  applyAnswer(progress, result);
+  return write(KEYS.progress, progress);
+}
 
+// Adds one line to "Recent sessions" when a Practice session ends.
+export function recordSessionEntry(entry) {
+  const progress = getProgress();
+  pushSession(progress, entry);
   return write(KEYS.progress, progress);
 }

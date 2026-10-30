@@ -33,15 +33,16 @@
 
   <section id="play" class="card" hidden>
     <div class="session-top">
-      <a class="back" href="index.html">
-        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#arrow-left"/></svg>
-        <span>Home</span>
-      </a>
+      <button id="endBtn" class="btn small ghost" type="button">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#x-circle"/></svg>
+        <span>End session</span>
+      </button>
       <span id="progress" class="pill"></span>
     </div>
-    <div id="progressTrack" class="bar purple" role="progressbar" aria-label="Session progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div id="progressTrack" class="bar purple" role="progressbar" aria-label="Progress through the word list" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
       <span id="barFill" class="bar-fill"></span>
     </div>
+    <p id="liveStats" class="live-stats" role="status"></p>
 
     <p class="prompt">Listen to the word</p>
     <button id="hearBtn" class="speaker" type="button" aria-label="Hear the word">
@@ -71,13 +72,20 @@
 
   <section id="done" class="card center" hidden>
     <img class="mascot bob" src="assets/bee.svg" width="90" height="97" alt="">
-    <h2>Session complete</h2>
-    <p id="scoreText" class="score"></p>
+    <h2>Session summary</h2>
+    <p id="summaryMsg" class="muted"></p>
+    <div class="sum-grid">
+      <div class="sum"><strong id="sumAttempts">0</strong><span>Attempts</span></div>
+      <div class="sum good"><strong id="sumCorrect">0</strong><span>Correct</span></div>
+      <div class="sum warm"><strong id="sumIncorrect">0</strong><span>Incorrect</span></div>
+      <div class="sum"><strong id="sumAccuracy">—</strong><span>Accuracy</span></div>
+    </div>
+    <p id="sumRounds" class="muted" hidden></p>
     <div id="missedBox" hidden>
       <h2>Words to practise</h2>
-      <ul id="missedList" class="missed"></ul>
+      <ul id="missedList" class="missed missed-scroll"></ul>
     </div>
-    <a id="playAgain" class="btn primary big" href="practice.html">Play again</a>
+    <a id="playAgain" class="btn primary big" href="practice.html">Practise again</a>
     <a class="btn big ghost" href="index.html">Home</a>
   </section>
 
