@@ -4,7 +4,8 @@ import { icon, ensureStyles } from './ui.js';
 const VERSION = 1;
 const MAX_AUTO_SHOWS = 2; // if it is ignored twice, stop showing it by itself
 
-// target: a CSS selector for something to highlight, or a page name for its menu link.
+// page: highlights that page's menu link. target: highlights something on the page (found by CSS selector).
+// Either one can be missing from a page. The step then simply shows its text.
 const STEPS = [
   {
     icon: 'home',
@@ -15,7 +16,7 @@ const STEPS = [
   {
     icon: 'zap',
     title: 'Practice',
-    text: 'Tap the speaker to hear a word, type your spelling, then check it. Practice keeps going until you press End session.',
+    text: 'Tap the speaker to hear a word, then type your spelling. Practice keeps going until you press End session.',
     page: 'practice',
   },
   {
@@ -25,9 +26,27 @@ const STEPS = [
     page: 'learn',
   },
   {
+    icon: 'rotate',
+    title: 'Review Mistakes',
+    text: 'Missed a word? On the Home page, Review Mistakes brings those words back so you can get them right.',
+    target: '#tileReview',
+  },
+  {
+    icon: 'trophy',
+    title: 'Spelling Bee',
+    text: 'Play it like a real contest: one try for each word. You can change the rules in Settings.',
+    page: 'bee',
+  },
+  {
+    icon: 'bot',
+    title: 'Play the Computer',
+    text: 'On the Home page, choose Play the Computer. You both spell the same words, and the higher score wins!',
+    target: '#tileComputer',
+  },
+  {
     icon: 'bar-chart',
     title: 'Progress',
-    text: 'See how many words you have practised, your accuracy and your streak, and review the words you missed.',
+    text: 'See how many words you have practised, your accuracy and your streak.',
     page: 'progress',
   },
   {
@@ -175,7 +194,7 @@ function build() {
       highlighted = target;
       if (!step.page && typeof target.scrollIntoView === 'function') {
         try {
-          target.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          target.scrollIntoView({ block: 'center', behavior: 'smooth' });
         } catch {
           /* ignore */
         }
