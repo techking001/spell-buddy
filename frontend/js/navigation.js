@@ -96,5 +96,7 @@ export function renderNavigation() {
       toggle.focus();
     }
   });
+  // Lets the walkthrough open and close the menu so it can point at the links.
+  document.addEventListener('sb:menu', (e) => setOpen(Boolean(e.detail && e.detail.open)));
   window.matchMedia('(min-width: 980px)').addEventListener('change', () => setOpen(false));
 }

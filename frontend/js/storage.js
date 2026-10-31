@@ -1,4 +1,4 @@
-const KEYS = { progress: 'sb_progress', settings: 'sb_settings' };
+const KEYS = { progress: 'sb_progress', settings: 'sb_settings', tour: 'sb_tour' };
 export const DEFAULT_SETTINGS = {
   voiceName: '',
   speechRate: 0.85,
@@ -33,23 +33,62 @@ function write(key, value) {
 
 const isPlainObject = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
 
+// ---------- settings ----------
+// Values that are not safely on disk yet (a change that is waiting to be saved, or a save that failed).
+// They still apply straight away, so a change takes effect without waiting for the save.
+let unsavedSettings = null;
+
 export function getSettings() {
   const saved = read(KEYS.settings, {});
-  return { ...DEFAULT_SETTINGS, ...(isPlainObject(saved) ? saved : {}) };
+  return { ...DEFAULT_SETTINGS, ...(isPlainObject(saved) ? saved : {}), ...(unsavedSettings || {}) };
+}
+
+// Applies a change immediately (in memory) without writing it yet.
+export function previewSettings(patch) {
+  unsavedSettings = { ...(unsavedSettings || {}), ...patch };
+}
+
+// Saves a change on top of the current settings, then reads it back to make sure it really stuck.
+// Returns true only when the change is safely stored.
+export function saveSettingsPatch(patch) {
+  const next = { ...getSettings(), ...patch };
+  if (!write(KEYS.settings, next)) {
+    unsavedSettings = next; // keep applying it for this visit, but report the failure
+    return false;
+  }
+  const back = read(KEYS.settings, null);
+  const stuck = isPlainObject(back) && Object.keys(patch).every((k) => back[k] === patch[k]);
+  if (stuck) unsavedSettings = null;
+  else unsavedSettings = next;
+  return stuck;
 }
 
 export function saveSettings(settings) {
-  return write(KEYS.settings, settings);
+  return saveSettingsPatch(settings);
 }
 
 export function resetSettings() {
   try {
     localStorage.removeItem(KEYS.settings);
+    unsavedSettings = null;
+    return true;
   } catch {
-    /* ignore */
+    unsavedSettings = { ...DEFAULT_SETTINGS };
+    return false;
   }
 }
 
+// ---------- first-time walkthrough ----------
+export function getTourState() {
+  const s = read(KEYS.tour, null);
+  return isPlainObject(s) ? s : null;
+}
+
+export function saveTourState(state) {
+  return write(KEYS.tour, state);
+}
+
+// ---------- progress ----------
 function emptyProgress() {
   return { sessions: [], mistakes: {}, totalCorrect: 0, totalAnswered: 0 };
 }
@@ -98,8 +137,7 @@ export function recordSession(session) {
   return write(KEYS.progress, progress);
 }
 
-// Used by continuous Practice: saves each answer straight away,
-// so nothing is lost if the pupil leaves the page at any moment.
+// Used by continuous Practice: saves each answer straight away.
 export function recordAnswer(result) {
   const progress = getProgress();
   applyAnswer(progress, result);

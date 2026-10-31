@@ -1,0 +1,35 @@
+/* Loaded on every page by js/ui.js (ensureStyles). */
+
+/* ---------- small messages (backup voice, voice problems) ---------- */
+.toast{position:fixed;top:78px;left:50%;z-index:110;width:max-content;max-width:min(92vw,460px);padding:12px 16px;border-radius:14px;background:var(--ink);color:#fff;font-weight:700;font-size:.95rem;text-align:center;box-shadow:0 12px 30px rgba(30,27,75,.35);opacity:0;transform:translate(-50%,-10px);pointer-events:none;transition:opacity .2s,transform .2s}
+.toast.show{opacity:1;transform:translate(-50%,0);pointer-events:auto;cursor:pointer}
+
+/* ---------- settings: save status and hints ---------- */
+.save-bar{position:fixed;left:50%;bottom:16px;z-index:80;display:flex;align-items:center;gap:10px;max-width:min(92vw,460px);padding:8px 14px;border:2px solid var(--line);border-radius:999px;background:#fff;box-shadow:var(--shadow);font-weight:800;transform:translateX(-50%);transition:opacity .2s}
+.save-bar.idle{opacity:0;pointer-events:none}
+.save-bar.saving{color:var(--muted)}
+.save-bar.saved{color:var(--good);border-color:#86efac}
+.save-bar.error{color:#7c2d12;border-color:#fdba74;background:var(--bad-soft);border-radius:var(--radius)}
+#saveStatus{display:flex;align-items:center;gap:8px}
+#saveStatus .icon{width:20px;height:20px}
+.field-hint{margin:6px 0 0;font-size:.9rem;color:var(--muted)}
+.help-card{margin-top:16px}
+
+/* ---------- first-time walkthrough ---------- */
+.tour{position:fixed;z-index:100;left:12px;right:12px;bottom:12px;max-width:460px;max-height:70vh;margin:0 auto;padding:16px;overflow:auto;background:#fff;border:2px solid var(--purple);border-radius:var(--radius);box-shadow:0 18px 40px rgba(30,27,75,.35);animation:rise .25s ease both}
+.tour:focus{outline:none}
+.tour-head{display:flex;align-items:center;gap:10px}
+.tour-head h2{margin:0}
+.tour-ico{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#8a6cff,var(--purple));color:#fff}
+.tour-ico .icon{width:22px;height:22px}
+.tour-text{margin:10px 0 6px}
+.tour-dots{display:flex;justify-content:center;gap:6px;margin:8px 0 2px}
+.tour-dot{width:8px;height:8px;border-radius:999px;background:var(--line);transition:width .2s,background .2s}
+.tour-dot.on{width:22px;background:var(--purple)}
+.tour-count{margin:0 0 10px;text-align:center;font-size:.85rem;color:var(--muted)}
+.tour-actions{display:flex;align-items:center;gap:8px}
+.tour-actions .spacer{flex:1}
+.tour-actions .btn .icon{width:1.1em;height:1.1em}
+.tour-focus{outline:3px solid var(--yellow)!important;outline-offset:3px;border-radius:14px;animation:tourPulse 1.4s ease-in-out infinite}
+@keyframes tourPulse{0%,100%{box-shadow:0 0 0 0 rgba(255,201,51,.75)}50%{box-shadow:0 0 0 10px rgba(255,201,51,0)}}
+@media (min-width:700px){.tour{left:auto;right:20px;bottom:20px;width:420px;margin:0}}

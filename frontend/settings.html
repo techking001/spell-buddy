@@ -18,6 +18,7 @@
     <span class="h-badge c-purple" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#sliders"/></svg></span>
     <span>Settings</span>
   </h1>
+  <p class="muted">Your changes save automatically.</p>
 
   <form id="form">
     <section class="card">
@@ -28,6 +29,7 @@
       <p id="speechWarning" class="warn" hidden>This browser cannot speak words aloud, so voice settings are unavailable.</p>
       <label class="field" for="voice">Voice</label>
       <select id="voice" class="select-input"><option value="">Automatic</option></select>
+      <p id="voiceHint" class="field-hint" hidden></p>
 
       <label class="field" for="rate">Speaking speed: <output id="rateOut">0.85×</output></label>
       <input id="rate" class="range" type="range" min="0.5" max="1.2" step="0.05" value="0.85">
@@ -58,14 +60,27 @@
       <label class="check-row"><input id="beeAllowOrigin" type="checkbox"> Word origin (when verified)</label>
     </section>
 
-    <p id="flash" class="flash" role="status" aria-live="polite"></p>
-    <button class="btn primary big" type="submit">
-      <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#check"/></svg>
-      <span>Save</span>
-    </button>
     <button id="resetBtn" class="btn big ghost" type="button">Reset to defaults</button>
   </form>
+
+  <section class="card help-card" aria-labelledby="helpTitle">
+    <h2 id="helpTitle" class="with-ico">
+      <span class="h-badge c-green" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#info"/></svg></span>
+      <span>Help</span>
+    </h2>
+    <p class="muted">New here, or need a reminder of what each part does?</p>
+    <button id="tourBtn" class="btn big" type="button">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#play"/></svg>
+      <span>Show the walkthrough again</span>
+    </button>
+  </section>
 </main>
+
+<div id="saveBar" class="save-bar idle">
+  <span id="saveStatus" role="status" aria-live="polite"></span>
+  <button id="retrySave" class="btn small" type="button" hidden>Try again</button>
+</div>
+
 <script type="module" src="js/app.js"></script>
 <script type="module" src="js/settings.js"></script>
 </body>

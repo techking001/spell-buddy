@@ -54,3 +54,41 @@ export function watchProgressBar() {
   new MutationObserver(update).observe(label, { childList: true, characterData: true, subtree: true });
   update();
 }
+
+// Loads css/extras.css (messages, walkthrough, save status) on every page without editing each page.
+let stylesPromise = null;
+export function ensureStyles() {
+  if (stylesPromise) return stylesPromise;
+  stylesPromise = new Promise((resolve) => {
+    if (document.querySelector('link[data-sb-extras]')) return resolve();
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'css/extras.css';
+    link.setAttribute('data-sb-extras', '1');
+    link.addEventListener('load', () => resolve());
+    link.addEventListener('error', () => resolve());
+    setTimeout(resolve, 1500); // never wait forever
+    document.head.appendChild(link);
+  });
+  return stylesPromise;
+}
+
+// A small message near the top of the screen that goes away by itself.
+let toastTimer = null;
+export function showToast(message, ms = 7000) {
+  if (!message) return;
+  let el = document.getElementById('sb-toast');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'sb-toast';
+    el.className = 'toast';
+    el.setAttribute('role', 'status');
+    el.setAttribute('aria-live', 'polite');
+    el.addEventListener('click', () => el.classList.remove('show'));
+    document.body.appendChild(el);
+  }
+  el.textContent = message;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), ms);
+}
