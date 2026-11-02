@@ -49,7 +49,7 @@ function runChecks(words) {
   const badSyl = words
     .filter((w) => !Array.isArray(w.syllables) || !w.syllables.length || w.syllables.join('').toLowerCase() !== String(w.word).toLowerCase())
     .map((w) => w.word);
-  add(badSyl.length ? 'warn' : 'pass', 'Syllables join back into the word', list(badSyl));
+  add(badSyl.length ? 'warn' : 'pass', 'Syllable pieces spell the word letter by letter', badSyl.length ? `${list(badSyl)} (these may show how the word SOUNDS, for example vegetable = veg-ta-ble, so review them rather than treating them as errors)` : '');
 
   const noWordInSentence = words
     .filter((w) => !String(w.example_sentence).toLowerCase().includes(String(w.word).toLowerCase()))

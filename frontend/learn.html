@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/pages.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/ui2.css">
 </head>
 <body>
 <header id="site-header" class="site-header"></header>
@@ -70,6 +71,7 @@
     <label for="tryInput" class="try-label">Now try spelling it</label>
     <input id="tryInput" class="answer" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
     <p id="tryFeedback" class="feedback" role="status" aria-live="polite"></p>
+    <div id="tryCorrection" class="correction" tabindex="-1" aria-live="polite" hidden></div>
     <button id="tryBtn" class="btn primary big" type="button">
       <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#check"/></svg>
       <span>Check</span>

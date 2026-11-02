@@ -323,6 +323,14 @@ export function speak(text, override = {}) {
   });
 }
 
+// Says a word letter by letter ("B, E, A, U..."), a little slower than normal so each letter is clear.
+export function spellOut(word, override = {}) {
+  const letters = Array.from(String(word || '')).filter((ch) => /[a-z]/i.test(ch)).map((ch) => ch.toUpperCase());
+  if (!letters.length) return Promise.resolve(false);
+  const rate = Math.min(Number({ ...getSettings(), ...override }.speechRate) || 0.85, 0.75);
+  return speak(letters.join(', '), { ...override, speechRate: rate });
+}
+
 export function stopSpeaking() {
   if (active) finish(active, false);
   if (isSpeechSupported()) safeCancel();

@@ -1,21 +1,25 @@
 import { DIFFICULTIES, COMPUTER_LEVELS, DEFAULT_COMPUTER_LEVEL } from './config.js';
 import { checkAnswer } from './answer-checker.js';
+import { renderCorrection, clearCorrection } from './correction.js';
 import { pointsFor, totalPoints } from './scoring.js';
 import * as speech from './pronunciation.js';
 import { getSettings, recordSession } from './storage.js';
-import { loadFreeWords, shuffle } from './words.js';
+import { loadFreeWords, shuffle, wordsForDifficulty } from './words.js';
 import { decideComputerRound } from './computer.js';
 import { icon, setButton, setStatus } from './ui.js';
 
 const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);
-const requested = params.get('difficulty');
-const difficulty = DIFFICULTIES.includes(requested) ? requested : 'mixed';
 const match = params.get('opponent') === 'computer';
-const requestedLevel = params.get('computer');
-const compLevel = Object.keys(COMPUTER_LEVELS).includes(requestedLevel) ? requestedLevel : DEFAULT_COMPUTER_LEVEL;
 const settings = getSettings();
 
+// Two separate choices. Word difficulty = which words. Computer strength = how good the opponent is.
+const requested = params.get('difficulty');
+let difficulty = DIFFICULTIES.includes(requested) ? requested : 'mixed';
+const requestedLevel = params.get('computer');
+let compLevel = Object.keys(COMPUTER_LEVELS).includes(requestedLevel) ? requestedLevel : DEFAULT_COMPUTER_LEVEL;
+
+let allWords = [];
 let words = [];
 let index = 0;
 let results = [];
@@ -52,40 +56,94 @@ function maskWord(text, word) {
   return text.replace(new RegExp(escaped, 'gi'), '_____');
 }
 
-function setAction(label, iconName) {
-  setButton($('actionBtn'), iconName, label);
+const setAction = (label, iconName) => setButton($('actionBtn'), iconName, label);
+
+// ---------- setup screen ----------
+function syncUrl() {
+  try {
+    const u = new URL(location.href);
+    u.searchParams.set('difficulty', difficulty);
+    if (match) {
+      u.searchParams.set('opponent', 'computer');
+      u.searchParams.set('computer', compLevel);
+    }
+    history.replaceState(null, '', u.pathname + u.search + u.hash);
+  } catch {
+    /* the link is only for sharing, so a failure here is harmless */
+  }
 }
 
-// ---------- rules ----------
-function describeRules() {
+function describeRules(pool) {
   const rules = [];
   if (match) {
-    rules.push(
-      `You play against the computer (${COMPUTER_LEVELS[compLevel].label} level). It spells every word too, and the higher score wins.`
-    );
+    rules.push(`You play against the computer (${COMPUTER_LEVELS[compLevel].label} strength). It spells every word too, and the higher score wins.`);
   }
   rules.push('You get one try for each word. After you submit, you will see the correct spelling.');
-
   rules.push(
     settings.beeTimerSeconds
       ? `You have ${settings.beeTimerSeconds} seconds for each word. The clock starts after the word is spoken.`
       : 'There is no time limit.'
   );
-
   rules.push(
     settings.beeMaxRepeats
       ? `You can hear the word again up to ${settings.beeMaxRepeats} time${settings.beeMaxRepeats === 1 ? '' : 's'}.`
       : 'You can hear the word again as many times as you like.'
   );
-
   const helps = [];
   if (settings.beeAllowMeaning) helps.push('the meaning');
   if (settings.beeAllowSentence) helps.push('an example sentence');
-  if (settings.beeAllowOrigin && words.some(speech.hasVerifiedOrigin)) helps.push('the word origin');
+  if (settings.beeAllowOrigin && pool.some(speech.hasVerifiedOrigin)) helps.push('the word origin');
   rules.push(helps.length ? `You may ask for: ${helps.join(', ')}.` : 'No extra help is allowed.');
-
   rules.push('Each correct word scores 1 point.');
   return rules;
+}
+
+function updateSetup() {
+  const pool = wordsForDifficulty(allWords, difficulty);
+  const count = Math.min(settings.beeWordCount, pool.length);
+  $('readyInfo').textContent = count ? `${count} word${count === 1 ? '' : 's'} this round` : 'There are no words at this level yet.';
+  $('rulesList').innerHTML = '';
+  describeRules(pool).forEach((text) => {
+    const li = document.createElement('li');
+    li.textContent = text;
+    $('rulesList').appendChild(li);
+  });
+  $('beginBtn').disabled = count === 0;
+}
+
+function setupScreen() {
+  $('readyTitle').textContent = match ? 'Play the Computer' : 'Spelling Bee';
+  document.title = `${match ? 'Play the Computer' : 'Spelling Bee'} · Spell Buddy`;
+  $('chooseTitle').hidden = match; // the match has two clearly named sections instead
+  $('levelLegend').textContent = match ? 'Choose word difficulty' : 'Word difficulty';
+  $('strengthBox').hidden = !match;
+  $('matchExplain').hidden = !match;
+  $('beginLabel').textContent = match ? 'Start match' : 'Start Bee challenge';
+  $('listenSetup').dataset.say = match
+    ? 'Choose the word difficulty. Then choose how strong the computer is. Then press Start match. You and the computer spell the same words. The higher score wins.'
+    : 'Choose your word difficulty. Then press Start Bee challenge. You get one try for each word.';
+
+  document.querySelectorAll('input[name="level"]').forEach((radio) => {
+    const count = wordsForDifficulty(allWords, radio.value).length;
+    radio.closest('.opt').querySelector('.opt-count').textContent = `${count} words`;
+    radio.disabled = count === 0;
+    radio.checked = radio.value === difficulty;
+    radio.addEventListener('change', () => {
+      difficulty = radio.value;
+      syncUrl();
+      updateSetup();
+    });
+  });
+  document.querySelectorAll('input[name="strength"]').forEach((radio) => {
+    radio.checked = radio.value === compLevel;
+    radio.addEventListener('change', () => {
+      compLevel = radio.value;
+      syncUrl();
+      updateSetup();
+    });
+  });
+  syncUrl();
+  updateSetup();
 }
 
 // ---------- timer ----------
@@ -192,6 +250,7 @@ function showWord() {
   updateRepeatButton();
   setAction('Submit', 'check');
   setStatus($('feedback'), '');
+  clearCorrection($('correction'));
   $('answer').focus();
 
   speakNow(speech.phrases.word(w)).then(() => {
@@ -224,8 +283,8 @@ function submit(timedOut = false) {
   stopTimer();
   speech.stopSpeaking();
   $('hearBtn').classList.remove('speaking');
-  const { correct } = checkAnswer(typed, w.word);
-  answered = true;
+  const { correct, comparison } = checkAnswer(typed, w.word);
+  answered = true; // the competition attempt is now locked: there is no second try
   results.push({ id: w.id, word: w.word, correct, answer: typed.trim(), points: pointsFor(correct) });
 
   $('answer').disabled = true;
@@ -234,9 +293,17 @@ function submit(timedOut = false) {
   $('sentenceBtn').disabled = true;
   $('originBtn').disabled = true;
 
-  if (correct) setStatus($('feedback'), 'Correct! Well done.', 'good');
-  else if (timedOut === true) setStatus($('feedback'), `Time's up! The correct spelling is “${w.word}”.`, 'bad', 'clock');
-  else setStatus($('feedback'), `Good try! The correct spelling is “${w.word}”.`, 'bad');
+  if (correct) {
+    setStatus($('feedback'), 'Correct! Well done.', 'good');
+  } else {
+    setStatus($('feedback'), '');
+    // Learning only: the answer stays locked. Hearing the word does not reopen the attempt.
+    renderCorrection($('correction'), comparison, {
+      title: timedOut === true ? 'Time’s up' : undefined,
+      onHear: () => speakNow(speech.phrases.word(w)),
+      onSpell: () => speech.spellOut(w.word),
+    });
+  }
 
   if (index === words.length - 1) setAction('See results', 'bar-chart');
   else setAction('Next word', 'arrow-right');
@@ -279,6 +346,7 @@ function finish() {
     li.textContent = r.answer ? `${r.word} (you wrote “${r.answer}”)` : `${r.word} (no answer)`;
     $('missedList').appendChild(li);
   });
+  // "Play again" opens the setup screen again with the same choices already selected.
   $('playAgain').href = match
     ? `bee.html?opponent=computer&computer=${compLevel}&difficulty=${difficulty}`
     : `bee.html?difficulty=${difficulty}`;
@@ -287,21 +355,8 @@ function finish() {
 
 async function init() {
   try {
-    const all = await loadFreeWords();
-    const pool = difficulty === 'mixed' ? all : all.filter((w) => w.difficulty === difficulty);
-    if (!pool.length) throw new Error('No words found for this level.');
-    words = shuffle(pool).slice(0, Math.min(settings.beeWordCount, pool.length));
-
-    $('readyTitle').textContent = match ? 'Play the Computer' : 'Spelling Bee';
-    document.title = `${match ? 'Vs Computer' : 'Spelling Bee'} · Spell Buddy`;
-    $('scoreboard').hidden = !match;
-    $('readyInfo').textContent = `${words.length} words · ${difficulty === 'mixed' ? 'mixed levels' : difficulty}`;
-    $('rulesList').innerHTML = '';
-    describeRules().forEach((text) => {
-      const li = document.createElement('li');
-      li.textContent = text;
-      $('rulesList').appendChild(li);
-    });
+    allWords = await loadFreeWords();
+    setupScreen();
     $('speechWarning').hidden = speech.isSpeechSupported();
     show('ready');
   } catch (e) {
@@ -312,6 +367,12 @@ async function init() {
 }
 
 $('beginBtn').addEventListener('click', () => {
+  const pool = wordsForDifficulty(allWords, difficulty); // the words come from the chosen difficulty
+  if (!pool.length) return;
+  words = shuffle(pool).slice(0, Math.min(settings.beeWordCount, pool.length));
+  index = 0;
+  results = [];
+  computerScore = 0;
   show('play');
   showWord(); // runs inside the tap so phones allow the audio
 });

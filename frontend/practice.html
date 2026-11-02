@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/practice.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/ui2.css">
 </head>
 <body>
 <header id="site-header" class="site-header"></header>
@@ -20,14 +21,37 @@
     <span class="skeleton line"></span>
   </section>
 
-  <section id="ready" class="card ready-card" hidden>
-    <img class="mascot bob" src="assets/bee.svg" width="110" height="119" alt="">
-    <h1>Ready?</h1>
+  <section id="ready" class="card setup" hidden>
+    <a class="back-link" href="index.html">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#arrow-left"/></svg>
+      <span>Home</span>
+    </a>
+    <h1>Practice</h1>
+
+    <div id="levelBox">
+      <fieldset class="opts">
+        <legend>Choose your word difficulty</legend>
+        <div class="opt-grid">
+          <label class="opt"><input type="radio" name="level" value="easy"><span class="opt-face"><span class="opt-name">Easy</span><small class="opt-count"></small></span></label>
+          <label class="opt"><input type="radio" name="level" value="medium"><span class="opt-face"><span class="opt-name">Medium</span><small class="opt-count"></small></span></label>
+          <label class="opt"><input type="radio" name="level" value="hard"><span class="opt-face"><span class="opt-name">Hard</span><small class="opt-count"></small></span></label>
+          <label class="opt"><input type="radio" name="level" value="mixed"><span class="opt-face"><span class="opt-name">Mixed</span><small class="opt-count"></small></span></label>
+        </div>
+      </fieldset>
+    </div>
+    <p id="reviewNote" class="explain" hidden>Let's practise the words you missed.</p>
+
     <p id="readyInfo" class="muted"></p>
     <p id="speechWarning" class="warn" hidden>This browser cannot speak words aloud. Try Chrome, Edge or Safari.</p>
+    <div class="listen-row">
+      <button id="listenSetup" class="btn small" type="button" data-say="Choose Easy, Medium, Hard or Mixed. Then press Start practice. You will hear a word. Type it and check your answer.">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#volume"/></svg>
+        <span>Listen</span>
+      </button>
+    </div>
     <button id="beginBtn" class="btn primary big" type="button">
       <svg class="icon fill" aria-hidden="true" focusable="false"><use href="assets/icons.svg#play"/></svg>
-      <span>Begin</span>
+      <span>Start practice</span>
     </button>
   </section>
 
@@ -60,6 +84,19 @@
     <label for="answer" class="muted">Type your spelling here</label>
     <input id="answer" class="answer" type="text" placeholder="Enter your answer…" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
     <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+
+    <div id="correction" class="correction" tabindex="-1" aria-live="polite" hidden></div>
+    <div id="retryBox" class="retry" hidden>
+      <label for="retryInput" class="muted">Type the word again to practise it. Your score will not change.</label>
+      <input id="retryInput" class="answer" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+      <p id="retryStatus" class="feedback" role="status" aria-live="polite"></p>
+      <div id="retryResult" class="correction" tabindex="-1" aria-live="polite" hidden></div>
+      <button id="retryBtn" class="btn small primary" type="button">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#check"/></svg>
+        <span>Check</span>
+      </button>
+    </div>
+
     <button id="actionBtn" class="btn primary big" type="button">
       <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#check"/></svg>
       <span>Check answer</span>

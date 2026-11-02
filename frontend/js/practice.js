@@ -1,20 +1,24 @@
 import { DIFFICULTIES } from './config.js';
 import { checkAnswer } from './answer-checker.js';
+import { compareSpelling } from './spell-diff.js';
+import { renderCorrection, clearCorrection } from './correction.js';
 import * as speech from './pronunciation.js';
 import { recordAnswer, recordSessionEntry, getProgress } from './storage.js';
 import { loadFreeWords, wordsForDifficulty } from './words.js';
 import { createCycler } from './cycle.js';
-import { setStatus, setButton } from './ui.js';
+import { setStatus, setButton, icon } from './ui.js';
 
 const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 const mode = params.get('mode') === 'review' ? 'review' : 'quick';
 const requested = params.get('difficulty');
-const difficulty = DIFFICULTIES.includes(requested) ? requested : 'mixed';
+let difficulty = DIFFICULTIES.includes(requested) ? requested : 'mixed'; // Mixed unless the link says otherwise
 
 // Quick practice never ends by itself. Review stops after every missed word has been shown once.
 const continuous = mode === 'quick';
 
+let allWords = [];
+let reviewPool = [];
 let cycler = null;
 let current = null;
 let answered = false;
@@ -45,17 +49,58 @@ function maskWord(text, word) {
   return text.replace(new RegExp(escaped, 'gi'), '_____');
 }
 
-function setAction(label, iconName) {
-  setButton($('actionBtn'), iconName, label);
-}
-
+const setAction = (label, iconName) => setButton($('actionBtn'), iconName, label);
 const accuracy = () => (session.attempts ? Math.round((session.correct / session.attempts) * 100) : null);
 
+// ---------- setup screen ----------
+function syncUrl() {
+  try {
+    const u = new URL(location.href);
+    u.searchParams.set('difficulty', difficulty);
+    history.replaceState(null, '', u.pathname + u.search + u.hash);
+  } catch {
+    /* the link is only for sharing, so a failure here is harmless */
+  }
+}
+
+function updateSetup() {
+  const count = wordsForDifficulty(allWords, difficulty).length;
+  $('readyInfo').textContent =
+    count === 0 ? 'There are no words at this level yet.' : `${count} word${count === 1 ? '' : 's'}. Practice keeps going until you press End session.`;
+  $('beginBtn').disabled = count === 0;
+}
+
+function setupLevels() {
+  document.querySelectorAll('input[name="level"]').forEach((radio) => {
+    const count = wordsForDifficulty(allWords, radio.value).length;
+    radio.closest('.opt').querySelector('.opt-count').textContent = `${count} words`;
+    radio.disabled = count === 0;
+    radio.checked = radio.value === difficulty;
+    radio.addEventListener('change', () => {
+      difficulty = radio.value; // the real word pool is built from this when Start is pressed
+      syncUrl();
+      updateSetup();
+    });
+  });
+  syncUrl();
+  updateSetup();
+}
+
+// ---------- playing ----------
 function updateLive() {
   const parts = [];
   if (continuous) parts.push(`Round ${cycler.cycle}`);
   if (session.attempts) parts.push(`${session.attempts} answered`, `${session.correct} correct (${accuracy()}%)`);
   $('liveStats').textContent = parts.join(' · ');
+}
+
+function resetFeedback() {
+  setStatus($('feedback'), '');
+  clearCorrection($('correction'));
+  clearCorrection($('retryResult'));
+  $('retryBox').hidden = true;
+  $('retryInput').value = '';
+  setStatus($('retryStatus'), '');
 }
 
 function showWord() {
@@ -73,7 +118,7 @@ function showWord() {
   $('sentenceBtn').hidden = !speech.phrases.sentence(w);
   $('originBtn').hidden = !speech.phrases.origin(w); // only when a verified origin exists
   setAction('Check answer', 'check');
-  setStatus($('feedback'), '');
+  resetFeedback();
   updateLive();
   $('answer').focus();
   speakNow(speech.phrases.word(w));
@@ -100,7 +145,33 @@ function recordResult(w, correct) {
     entry.count += 1;
     session.missed.set(w.id, entry);
   }
-  recordAnswer({ id: w.id, correct }); // saved immediately
+  recordAnswer({ id: w.id, correct }); // saved immediately. Only the real answer is ever recorded.
+}
+
+const hearCurrent = () => current && speakNow(speech.phrases.word(current));
+const spellCurrent = () => current && speech.spellOut(current.word);
+
+function openRetry() {
+  $('retryBox').hidden = false;
+  $('retryInput').value = '';
+  setStatus($('retryStatus'), '');
+  clearCorrection($('retryResult'));
+  $('retryInput').focus();
+}
+
+// A learning retry: it never touches the score, the session counts or saved progress.
+function checkRetry() {
+  if (!current) return;
+  const typed = $('retryInput').value;
+  if (!typed.trim()) return setStatus($('retryStatus'), 'Type the word first.', 'warn');
+  const result = compareSpelling(typed, current.word);
+  if (result.status === 'correct') {
+    clearCorrection($('retryResult'));
+    setStatus($('retryStatus'), 'Yes! You spelt it correctly. Your score did not change.', 'good');
+  } else {
+    setStatus($('retryStatus'), '');
+    renderCorrection($('retryResult'), result, { title: 'Try once more', onHear: hearCurrent, onSpell: spellCurrent });
+  }
 }
 
 function submit() {
@@ -110,13 +181,23 @@ function submit() {
   const typed = $('answer').value;
   if (!typed.trim()) return setStatus($('feedback'), 'Type your spelling first.', 'warn');
 
-  const { correct } = checkAnswer(typed, current.word);
+  const { correct, comparison } = checkAnswer(typed, current.word);
   answered = true;
   recordResult(current, correct);
   $('answer').disabled = true;
 
-  if (correct) setStatus($('feedback'), 'Correct! Well done.', 'good');
-  else setStatus($('feedback'), `Good try! The correct spelling is “${current.word}”.`, 'bad');
+  if (correct) {
+    setStatus($('feedback'), 'Correct! Well done.', 'good');
+  } else {
+    setStatus($('feedback'), '');
+    const { actions } = renderCorrection($('correction'), comparison, { onHear: hearCurrent, onSpell: spellCurrent });
+    const again = document.createElement('button');
+    again.type = 'button';
+    again.className = 'btn small primary';
+    again.append(icon('rotate'), Object.assign(document.createElement('span'), { textContent: 'Practise it again' }));
+    again.addEventListener('click', openRetry);
+    actions.appendChild(again);
+  }
 
   if (!continuous && cycler.remaining === 0) setAction('See results', 'bar-chart');
   else setAction('Next word', 'arrow-right');
@@ -170,21 +251,21 @@ function showSummary() {
 
 async function init() {
   try {
-    const all = await loadFreeWords();
-    let pool;
+    allWords = await loadFreeWords();
 
     if (mode === 'review') {
+      // Review always uses the words this pupil missed. The difficulty chooser is not shown.
       const ids = new Set(Object.keys(getProgress().mistakes));
-      pool = all.filter((w) => ids.has(w.id));
-      if (!pool.length) throw new Error('You have no missed words to review right now. Great job!');
-      $('readyInfo').textContent = `${pool.length} word${pool.length === 1 ? '' : 's'} to review`;
+      reviewPool = allWords.filter((w) => ids.has(w.id));
+      if (!reviewPool.length) throw new Error('You have no missed words to review right now. Great job!');
+      $('levelBox').hidden = true;
+      $('reviewNote').hidden = false;
+      $('readyInfo').textContent = `${reviewPool.length} word${reviewPool.length === 1 ? '' : 's'} to review`;
+      $('listenSetup').dataset.say = "Let's practise the words you missed. Press Start practice.";
     } else {
-      pool = wordsForDifficulty(all, difficulty);
-      if (!pool.length) throw new Error('No words found for this level.');
-      $('readyInfo').textContent = `${pool.length} ${difficulty === 'mixed' ? '' : difficulty + ' '}words · practice keeps going until you press End session`;
+      setupLevels();
     }
 
-    cycler = createCycler(pool, { loop: continuous });
     $('speechWarning').hidden = speech.isSpeechSupported();
     show('ready');
   } catch (e) {
@@ -195,17 +276,27 @@ async function init() {
 }
 
 $('beginBtn').addEventListener('click', () => {
+  const pool = mode === 'review' ? reviewPool : wordsForDifficulty(allWords, difficulty);
+  if (!pool.length) return;
+  cycler = createCycler(pool, { loop: continuous });
   show('play');
   showWord(); // runs inside the tap so phones allow the audio
 });
 $('endBtn').addEventListener('click', showSummary);
-$('hearBtn').addEventListener('click', () => current && speakNow(speech.phrases.word(current)));
+$('hearBtn').addEventListener('click', hearCurrent);
 $('meaningBtn').addEventListener('click', () => aid('meaning'));
 $('sentenceBtn').addEventListener('click', () => aid('sentence'));
 $('originBtn').addEventListener('click', () => aid('origin'));
 $('actionBtn').addEventListener('click', submit);
 $('answer').addEventListener('keydown', (e) => {
   if (e.key === 'Enter') submit();
+});
+$('retryBtn').addEventListener('click', checkRetry);
+$('retryInput').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    checkRetry();
+  }
 });
 // Leaving by any route (menu link, back button, closing the tab) still saves the session line.
 window.addEventListener('pagehide', () => {

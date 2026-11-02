@@ -1,73 +1,102 @@
 import { getTourState, saveTourState } from './storage.js';
 import { icon, ensureStyles } from './ui.js';
+import * as speech from './pronunciation.js';
 
-const VERSION = 1;
+const VERSION = 2;
 const MAX_AUTO_SHOWS = 2; // if it is ignored twice, stop showing it by itself
+const RESUME_KEY = 'sb_tour_resume'; // remembers the step while moving to another page
 
-// page: highlights that page's menu link. target: highlights something on the page (found by CSS selector).
-// Either one can be missing from a page. The step then simply shows its text.
+// target: the data-tour name of the thing to highlight.
+// page: the page that target lives on (leave out when it is on every page).
+// Students choose their difficulty when they start an activity, so these steps say so.
 const STEPS = [
   {
     icon: 'home',
     title: 'Welcome to Spell Buddy!',
-    text: 'Listen to a word, spell it, and watch your skills grow. This quick tour shows you around.',
-    target: '#startBtn',
+    text: 'Here you listen to words and learn to spell them. Let’s take a quick look around.',
+    target: 'brand',
+  },
+  {
+    icon: 'home',
+    title: 'The Home page',
+    text: 'This is the Home page. Pick what you want to do today.',
+    target: 'activities',
+    page: 'index',
   },
   {
     icon: 'zap',
     title: 'Practice',
-    text: 'Tap the speaker to hear a word, then type your spelling. Practice keeps going until you press End session.',
-    page: 'practice',
+    text: 'Tap Start practising. Choose Easy, Medium, Hard or Mixed. Then listen to the word and type it.',
+    target: 'start-practising',
+    page: 'index',
   },
   {
     icon: 'book-open',
     title: 'Learn',
-    text: 'See each word’s meaning, syllables and example sentence before you practise.',
-    page: 'learn',
-  },
-  {
-    icon: 'rotate',
-    title: 'Review Mistakes',
-    text: 'Missed a word? On the Home page, Review Mistakes brings those words back so you can get them right.',
-    target: '#tileReview',
+    text: 'See what a word means, how to say it in parts, and an example sentence.',
+    target: 'tile-learn',
+    page: 'index',
   },
   {
     icon: 'trophy',
     title: 'Spelling Bee',
-    text: 'Play it like a real contest: one try for each word. You can change the rules in Settings.',
-    page: 'bee',
+    text: 'You get one try for each word, like a real contest. You choose the difficulty before you start.',
+    target: 'tile-bee',
+    page: 'index',
   },
   {
     icon: 'bot',
     title: 'Play the Computer',
-    text: 'On the Home page, choose Play the Computer. You both spell the same words, and the higher score wins!',
-    target: '#tileComputer',
+    text: 'You and the computer spell the same words. First choose the word difficulty. Then choose how strong the computer is.',
+    target: 'tile-computer',
+    page: 'index',
+  },
+  {
+    icon: 'rotate',
+    title: 'Review Mistakes',
+    text: 'Practise the words you got wrong, until you get them right.',
+    target: 'tile-review',
+    page: 'index',
   },
   {
     icon: 'bar-chart',
     title: 'Progress',
-    text: 'See how many words you have practised, your accuracy and your streak.',
-    page: 'progress',
+    text: 'See how many words you got right and how you are improving.',
+    target: 'nav-progress',
+    menu: true,
   },
   {
     icon: 'sliders',
     title: 'Settings',
-    text: 'Choose a voice and speaking speed. Your choices save automatically.',
-    page: 'settings',
+    text: 'Choose a voice and how fast it speaks. Your choices save by themselves.',
+    target: 'nav-settings',
+    menu: true,
   },
 ];
 
 let running = false;
 
-const isHomePage = () => {
-  const last = (location.pathname.split('/').pop() || '').replace('.html', '');
-  return last === '' || last === 'index';
-};
+// Moving to another page. Tests replace this so no real page load is needed.
+let navigate = (url) => window.location.assign(url);
+export function setNavigator(fn) {
+  navigate = fn;
+}
+
+const currentPage = () => (location.pathname.split('/').pop() || 'index').replace('.html', '') || 'index';
+
+function rememberStep(index) {
+  try {
+    sessionStorage.setItem(RESUME_KEY, JSON.stringify({ index }));
+    return true;
+  } catch {
+    return false; // private mode or blocked storage: the walkthrough then stays on this page
+  }
+}
 
 // Shows the tour by itself the first time someone opens the home page.
 export async function maybeStartTour() {
   try {
-    if (!isHomePage()) return;
+    if (currentPage() !== 'index') return;
     const state = getTourState();
     if (state && (state.status === 'completed' || state.status === 'skipped')) return;
     const shown = (state && Number(state.autoShown)) || 0;
@@ -80,35 +109,53 @@ export async function maybeStartTour() {
   }
 }
 
-function findTarget(step) {
+// Carries on after the walkthrough moved to another page. Returns true when it did.
+export async function resumeTour() {
+  let raw = null;
   try {
-    if (step.page) return document.querySelector(`#nav-menu a[href="${step.page}.html"]`);
-    if (step.target) return document.querySelector(step.target);
+    raw = sessionStorage.getItem(RESUME_KEY);
+    sessionStorage.removeItem(RESUME_KEY); // read once, so a refresh never repeats it
   } catch {
-    /* an element that cannot be found is simply not highlighted */
+    return false;
   }
-  return null;
+  if (!raw) return false;
+  try {
+    const index = Number(JSON.parse(raw).index);
+    if (!Number.isInteger(index) || index < 0 || index >= STEPS.length) return false;
+    await startTour({ index });
+    return true;
+  } catch {
+    return false;
+  }
 }
 
+const findTarget = (name) => {
+  try {
+    return document.querySelector(`[data-tour="${name}"]`);
+  } catch {
+    return null;
+  }
+};
 const setMenu = (open) => document.dispatchEvent(new CustomEvent('sb:menu', { detail: { open } }));
 
 // Starts (or restarts) the walkthrough. Safe to call from anywhere.
-export async function startTour() {
+export async function startTour({ index = 0 } = {}) {
   if (running) return;
   running = true;
   try {
     await ensureStyles();
-    build();
+    build(index);
   } catch (e) {
     running = false;
     console.warn('Spell Buddy: the walkthrough could not open.', e);
   }
 }
 
-function build() {
+function build(startIndex) {
   const previousFocus = document.activeElement;
-  let index = 0;
+  let index = startIndex;
   let highlighted = null;
+  let narrating = false;
 
   const box = document.createElement('div');
   box.className = 'tour';
@@ -130,6 +177,19 @@ function build() {
   text.id = 'tour-text';
   text.className = 'tour-text';
   text.setAttribute('aria-live', 'polite');
+
+  const hint = document.createElement('p');
+  hint.className = 'tour-hint';
+  hint.hidden = true;
+
+  // Reading aloud only starts when the student taps this.
+  const listenRow = document.createElement('div');
+  listenRow.className = 'tour-listen';
+  const listen = document.createElement('button');
+  listen.type = 'button';
+  listen.className = 'btn small';
+  listenRow.appendChild(listen);
+  listenRow.hidden = !speech.isSpeechSupported();
 
   const dots = document.createElement('div');
   dots.className = 'tour-dots';
@@ -160,8 +220,22 @@ function build() {
   next.className = 'btn small primary';
   actions.append(skip, spacer, back, next);
 
-  box.append(head, text, dots, count, actions);
+  box.append(head, text, hint, listenRow, dots, count, actions);
   document.body.appendChild(box);
+
+  function setListenLabel() {
+    listen.textContent = '';
+    const label = document.createElement('span');
+    label.textContent = narrating ? 'Stop' : 'Listen';
+    listen.append(icon('volume'), label);
+    listen.setAttribute('aria-pressed', String(narrating));
+  }
+
+  function stopNarration() {
+    if (narrating) speech.stopSpeaking();
+    narrating = false;
+    setListenLabel();
+  }
 
   function clearHighlight() {
     if (highlighted) highlighted.classList.remove('tour-focus');
@@ -185,29 +259,58 @@ function build() {
     const label = document.createElement('span');
     label.textContent = last ? 'Finish' : 'Next';
     next.append(label, icon(last ? 'check' : 'arrow-right'));
+    setListenLabel();
 
     clearHighlight();
-    setMenu(!!step.page); // on phones the menu opens so the link can be seen
-    const target = findTarget(step);
+    setMenu(!!step.menu); // on phones the menu opens so the link can be seen
+    const target = findTarget(step.target);
     if (target) {
+      hint.hidden = true;
       target.classList.add('tour-focus');
       highlighted = target;
-      if (!step.page && typeof target.scrollIntoView === 'function') {
+      if (!step.menu && typeof target.scrollIntoView === 'function') {
         try {
           target.scrollIntoView({ block: 'center', behavior: 'smooth' });
         } catch {
           /* ignore */
         }
       }
+    } else {
+      // The thing is genuinely not here (for example storage is blocked so we could not move pages).
+      hint.hidden = !step.page;
+      hint.textContent = step.page ? 'You can see this on the Home page.' : '';
     }
   }
 
-  function close(status) {
+  // Moves to a step. If the step belongs on another page, go there and carry on from the same step.
+  function goTo(i) {
+    stopNarration();
+    const step = STEPS[i];
+    if (step.page && step.page !== currentPage() && rememberStep(i)) {
+      closeDialog();
+      navigate(`${step.page}.html`);
+      return;
+    }
+    index = i;
+    render();
+  }
+
+  function closeDialog() {
+    stopNarration();
     document.removeEventListener('keydown', onKey);
     clearHighlight();
     setMenu(false);
     box.remove();
     running = false;
+  }
+
+  function finish(status) {
+    closeDialog();
+    try {
+      sessionStorage.removeItem(RESUME_KEY);
+    } catch {
+      /* ignore */
+    }
     saveTourState({ ...(getTourState() || {}), version: VERSION, status, finishedAt: new Date().toISOString() });
     try {
       if (previousFocus && typeof previousFocus.focus === 'function') previousFocus.focus();
@@ -217,21 +320,25 @@ function build() {
   }
 
   function onKey(e) {
-    if (e.key === 'Escape') close('skipped');
+    if (e.key === 'Escape') finish('skipped');
   }
 
-  skip.addEventListener('click', () => close('skipped'));
-  back.addEventListener('click', () => {
-    if (index > 0) {
-      index -= 1;
-      render();
-    }
+  listen.addEventListener('click', () => {
+    if (narrating) return stopNarration();
+    narrating = true;
+    setListenLabel();
+    const step = STEPS[index];
+    const myStep = index;
+    speech.speak(`${step.title}. ${step.text}`).then(() => {
+      if (narrating && index === myStep) {
+        narrating = false;
+        setListenLabel();
+      }
+    });
   });
-  next.addEventListener('click', () => {
-    if (index >= STEPS.length - 1) return close('completed');
-    index += 1;
-    render();
-  });
+  skip.addEventListener('click', () => finish('skipped'));
+  back.addEventListener('click', () => index > 0 && goTo(index - 1));
+  next.addEventListener('click', () => (index >= STEPS.length - 1 ? finish('completed') : goTo(index + 1)));
   document.addEventListener('keydown', onKey);
 
   render();

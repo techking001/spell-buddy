@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/bee.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/ui2.css">
 </head>
 <body>
 <header id="site-header" class="site-header"></header>
@@ -21,19 +22,48 @@
     <span class="skeleton line"></span>
   </section>
 
-  <section id="ready" class="card" hidden>
-    <h1 class="with-ico">
-      <span class="h-badge c-yellow" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#trophy"/></svg></span>
-      <span id="readyTitle">Spelling Bee</span>
-    </h1>
-    <p id="readyInfo" class="muted"></p>
+  <section id="ready" class="card setup" hidden>
+    <a class="back-link" href="index.html">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#arrow-left"/></svg>
+      <span>Home</span>
+    </a>
+    <h1 id="readyTitle">Spelling Bee</h1>
+    <h2 id="chooseTitle" class="setup-h">Choose your challenge</h2>
+
+    <fieldset class="opts">
+      <legend id="levelLegend">Word difficulty</legend>
+      <div class="opt-grid">
+        <label class="opt"><input type="radio" name="level" value="easy"><span class="opt-face"><span class="opt-name">Easy</span><small class="opt-count"></small></span></label>
+        <label class="opt"><input type="radio" name="level" value="medium"><span class="opt-face"><span class="opt-name">Medium</span><small class="opt-count"></small></span></label>
+        <label class="opt"><input type="radio" name="level" value="hard"><span class="opt-face"><span class="opt-name">Hard</span><small class="opt-count"></small></span></label>
+        <label class="opt"><input type="radio" name="level" value="mixed"><span class="opt-face"><span class="opt-name">Mixed</span><small class="opt-count"></small></span></label>
+      </div>
+    </fieldset>
+
+    <fieldset id="strengthBox" class="opts" hidden>
+      <legend>Choose computer strength</legend>
+      <div class="opt-grid three">
+        <label class="opt"><input type="radio" name="strength" value="easy"><span class="opt-face"><span class="opt-name">Easy</span></span></label>
+        <label class="opt"><input type="radio" name="strength" value="medium"><span class="opt-face"><span class="opt-name">Medium</span></span></label>
+        <label class="opt"><input type="radio" name="strength" value="hard"><span class="opt-face"><span class="opt-name">Hard</span></span></label>
+      </div>
+    </fieldset>
+    <p id="matchExplain" class="explain" hidden>Word difficulty controls the words you get. Computer strength controls how strong your opponent is.</p>
+
     <h2>The rules</h2>
     <ul id="rulesList" class="rules"></ul>
     <p class="muted">You can change these rules in <a href="settings.html">Settings</a>.</p>
+    <p id="readyInfo" class="muted"></p>
     <p id="speechWarning" class="warn" hidden>This browser cannot speak words aloud. Try Chrome, Edge or Safari.</p>
+    <div class="listen-row">
+      <button id="listenSetup" class="btn small" type="button" data-say="Choose your word difficulty. Then press the start button. You get one try for each word.">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#volume"/></svg>
+        <span>Listen</span>
+      </button>
+    </div>
     <button id="beginBtn" class="btn primary big" type="button">
       <svg class="icon fill" aria-hidden="true" focusable="false"><use href="assets/icons.svg#play"/></svg>
-      <span>Begin</span>
+      <span id="beginLabel">Start Bee challenge</span>
     </button>
   </section>
 
@@ -68,6 +98,7 @@
     <label for="answer" class="muted">Spell the word you heard</label>
     <input id="answer" class="answer" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
     <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+    <div id="correction" class="correction" tabindex="-1" aria-live="polite" hidden></div>
     <p id="compLine" class="comp-line" role="status" aria-live="polite" hidden></p>
     <button id="actionBtn" class="btn primary big" type="button">
       <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#check"/></svg>
@@ -82,7 +113,7 @@
     <p id="matchResult" class="match-result" hidden></p>
     <div id="missedBox" hidden>
       <h2>Words to practise</h2>
-      <ul id="missedList" class="missed"></ul>
+      <ul id="missedList" class="missed missed-scroll"></ul>
     </div>
     <a id="playAgain" class="btn primary big" href="bee.html">Play again</a>
     <a class="btn big ghost" href="index.html">Home</a>

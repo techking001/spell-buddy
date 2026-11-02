@@ -3,7 +3,7 @@ import { icon } from './ui.js';
 const LINKS = [
   ['index', 'Home', 'home'],
   ['practice', 'Practice', 'zap'],
-  ['bee', 'Bee', 'trophy'],
+  ['bee', 'Spelling Bee', 'trophy'],
   ['learn', 'Learn', 'book-open'],
   ['progress', 'Progress', 'bar-chart'],
   ['premium', 'Premium', 'crown'],
@@ -23,6 +23,8 @@ export function renderNavigation() {
   const brand = document.createElement('a');
   brand.className = 'brand';
   brand.href = 'index.html';
+  brand.dataset.tour = 'brand';
+  brand.setAttribute('aria-label', 'Spell Buddy home');
   const logo = new Image(44, 48);
   logo.src = 'assets/bee.svg';
   logo.alt = '';
@@ -61,6 +63,7 @@ export function renderNavigation() {
   LINKS.forEach(([page, title, iconName]) => {
     const a = document.createElement('a');
     a.href = `${page}.html`;
+    a.dataset.tour = `nav-${page}`; // a stable name the walkthrough can find
     const ico = document.createElement('span');
     ico.className = 'ico';
     ico.appendChild(icon(iconName));

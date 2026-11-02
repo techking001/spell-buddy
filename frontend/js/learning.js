@@ -1,6 +1,7 @@
 import { loadFreeWords } from './words.js';
 import { checkAnswer } from './answer-checker.js';
 import * as speech from './pronunciation.js';
+import { renderCorrection, clearCorrection } from './correction.js';
 import { setStatus } from './ui.js';
 
 const $ = (id) => document.getElementById(id);
@@ -86,6 +87,7 @@ function openWord(i) {
 
   $('tryInput').value = '';
   setStatus($('tryFeedback'), '');
+  clearCorrection($('tryCorrection'));
   $('speechWarning').hidden = speech.isSpeechSupported();
   showView('cardView');
   window.scrollTo(0, 0);
@@ -95,9 +97,18 @@ function tryWord() {
   const w = visible[position];
   const typed = $('tryInput').value;
   if (!typed.trim()) return setStatus($('tryFeedback'), 'Type your spelling first.', 'warn');
-  const { correct } = checkAnswer(typed, w.word);
-  if (correct) setStatus($('tryFeedback'), 'Correct! Well done.', 'good');
-  else setStatus($('tryFeedback'), `Good try! The correct spelling is “${w.word}”.`, 'bad');
+  const { correct, comparison } = checkAnswer(typed, w.word);
+  if (correct) {
+    clearCorrection($('tryCorrection'));
+    setStatus($('tryFeedback'), 'Correct! Well done.', 'good');
+  } else {
+    setStatus($('tryFeedback'), '');
+    // The correction appears right here, so the pupil never has to leave the word they are learning.
+    renderCorrection($('tryCorrection'), comparison, {
+      onHear: () => speech.speak(speech.phrases.word(w)),
+      onSpell: () => speech.spellOut(w.word),
+    });
+  }
 }
 
 document.querySelectorAll('input[name="level"]').forEach((radio) => {
