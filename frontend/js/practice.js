@@ -1,12 +1,11 @@
 import { DIFFICULTIES } from './config.js';
 import { checkAnswer } from './answer-checker.js';
-import { compareSpelling } from './spell-diff.js';
 import { renderCorrection, clearCorrection } from './correction.js';
 import * as speech from './pronunciation.js';
 import { recordAnswer, recordSessionEntry, getProgress } from './storage.js';
 import { loadFreeWords, wordsForDifficulty } from './words.js';
 import { createCycler } from './cycle.js';
-import { setStatus, setButton, icon } from './ui.js';
+import { setStatus, setButton } from './ui.js';
 
 const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);
@@ -97,10 +96,6 @@ function updateLive() {
 function resetFeedback() {
   setStatus($('feedback'), '');
   clearCorrection($('correction'));
-  clearCorrection($('retryResult'));
-  $('retryBox').hidden = true;
-  $('retryInput').value = '';
-  setStatus($('retryStatus'), '');
 }
 
 function showWord() {
@@ -149,30 +144,6 @@ function recordResult(w, correct) {
 }
 
 const hearCurrent = () => current && speakNow(speech.phrases.word(current));
-const spellCurrent = () => current && speech.spellOut(current.word);
-
-function openRetry() {
-  $('retryBox').hidden = false;
-  $('retryInput').value = '';
-  setStatus($('retryStatus'), '');
-  clearCorrection($('retryResult'));
-  $('retryInput').focus();
-}
-
-// A learning retry: it never touches the score, the session counts or saved progress.
-function checkRetry() {
-  if (!current) return;
-  const typed = $('retryInput').value;
-  if (!typed.trim()) return setStatus($('retryStatus'), 'Type the word first.', 'warn');
-  const result = compareSpelling(typed, current.word);
-  if (result.status === 'correct') {
-    clearCorrection($('retryResult'));
-    setStatus($('retryStatus'), 'Yes! You spelt it correctly. Your score did not change.', 'good');
-  } else {
-    setStatus($('retryStatus'), '');
-    renderCorrection($('retryResult'), result, { title: 'Try once more', onHear: hearCurrent, onSpell: spellCurrent });
-  }
-}
 
 function submit() {
   if (!current) return;
@@ -181,7 +152,7 @@ function submit() {
   const typed = $('answer').value;
   if (!typed.trim()) return setStatus($('feedback'), 'Type your spelling first.', 'warn');
 
-  const { correct, comparison } = checkAnswer(typed, current.word);
+  const { correct } = checkAnswer(typed, current.word);
   answered = true;
   recordResult(current, correct);
   $('answer').disabled = true;
@@ -190,13 +161,7 @@ function submit() {
     setStatus($('feedback'), 'Correct! Well done.', 'good');
   } else {
     setStatus($('feedback'), '');
-    const { actions } = renderCorrection($('correction'), comparison, { onHear: hearCurrent, onSpell: spellCurrent });
-    const again = document.createElement('button');
-    again.type = 'button';
-    again.className = 'btn small primary';
-    again.append(icon('rotate'), Object.assign(document.createElement('span'), { textContent: 'Practise it again' }));
-    again.addEventListener('click', openRetry);
-    actions.appendChild(again);
+    renderCorrection($('correction'), typed.trim(), current.word); // only: Your Answer / Correct Spelling
   }
 
   if (!continuous && cycler.remaining === 0) setAction('See results', 'bar-chart');
@@ -290,13 +255,6 @@ $('originBtn').addEventListener('click', () => aid('origin'));
 $('actionBtn').addEventListener('click', submit);
 $('answer').addEventListener('keydown', (e) => {
   if (e.key === 'Enter') submit();
-});
-$('retryBtn').addEventListener('click', checkRetry);
-$('retryInput').addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    e.preventDefault();
-    checkRetry();
-  }
 });
 // Leaving by any route (menu link, back button, closing the tab) still saves the session line.
 window.addEventListener('pagehide', () => {

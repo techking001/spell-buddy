@@ -97,17 +97,13 @@ function tryWord() {
   const w = visible[position];
   const typed = $('tryInput').value;
   if (!typed.trim()) return setStatus($('tryFeedback'), 'Type your spelling first.', 'warn');
-  const { correct, comparison } = checkAnswer(typed, w.word);
+  const { correct } = checkAnswer(typed, w.word);
   if (correct) {
     clearCorrection($('tryCorrection'));
     setStatus($('tryFeedback'), 'Correct! Well done.', 'good');
   } else {
     setStatus($('tryFeedback'), '');
-    // The correction appears right here, so the pupil never has to leave the word they are learning.
-    renderCorrection($('tryCorrection'), comparison, {
-      onHear: () => speech.speak(speech.phrases.word(w)),
-      onSpell: () => speech.spellOut(w.word),
-    });
+    renderCorrection($('tryCorrection'), typed.trim(), w.word); // only: Your Answer / Correct Spelling
   }
 }
 

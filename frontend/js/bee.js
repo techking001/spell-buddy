@@ -283,7 +283,7 @@ function submit(timedOut = false) {
   stopTimer();
   speech.stopSpeaking();
   $('hearBtn').classList.remove('speaking');
-  const { correct, comparison } = checkAnswer(typed, w.word);
+  const { correct } = checkAnswer(typed, w.word);
   answered = true; // the competition attempt is now locked: there is no second try
   results.push({ id: w.id, word: w.word, correct, answer: typed.trim(), points: pointsFor(correct) });
 
@@ -297,12 +297,8 @@ function submit(timedOut = false) {
     setStatus($('feedback'), 'Correct! Well done.', 'good');
   } else {
     setStatus($('feedback'), '');
-    // Learning only: the answer stays locked. Hearing the word does not reopen the attempt.
-    renderCorrection($('correction'), comparison, {
-      title: timedOut === true ? 'Time’s up' : undefined,
-      onHear: () => speakNow(speech.phrases.word(w)),
-      onSpell: () => speech.spellOut(w.word),
-    });
+    // The attempt is locked. Only: Your Answer / Correct Spelling.
+    renderCorrection($('correction'), typed.trim(), w.word);
   }
 
   if (index === words.length - 1) setAction('See results', 'bar-chart');
