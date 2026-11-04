@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Keyboard suggestion test · Spell Buddy</title>
+  <link rel="icon" href="assets/bee.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/practice.css">
+  <link rel="stylesheet" href="css/bee.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/ui2.css">
+</head>
+<body>
+<main class="container">
+  <section class="card">
+    <h1>Keyboard suggestion test</h1>
+    <p>For the owner only. It is not linked from the app.</p>
+    <ol>
+      <li>Open this page <strong>on the phone</strong> your students use, with the keyboard they normally use.</li>
+      <li>In each box below, type <strong>vege</strong> slowly.</li>
+      <li>Look at the row above the keyboard. Does it show <strong>vegetable</strong> (or other words)?</li>
+      <li>Choose an answer for each box, then press <strong>Make my report</strong> and send it to me.</li>
+    </ol>
+    <p class="muted">Try each keyboard your students use (for example Gboard, Samsung Keyboard, SwiftKey, iPhone).</p>
+  </section>
+
+  <div id="variants"></div>
+
+  <section class="card">
+    <button id="reportBtn" class="btn primary big" type="button">Make my report</button>
+    <label for="report" class="field">Your report (select it, copy it, and send it)</label>
+    <textarea id="report" class="num-input" rows="9" readonly></textarea>
+  </section>
+</main>
+<script type="module" src="js/keyboard-test.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@ const $ = (id) => document.getElementById(id);
 
 const clampRate = (n) => Math.min(1.2, Math.max(0.5, Number.isNaN(n) ? DEFAULT_SETTINGS.speechRate : n));
 const NUMBER_FIELDS = { beeWordCount: [1, 30], beeTimerSeconds: [0, 300], beeMaxRepeats: [0, 10] };
-const CHECK_FIELDS = ['beeAllowMeaning', 'beeAllowSentence', 'beeAllowOrigin'];
+const CHECK_FIELDS = ['beeAllowMeaning', 'beeAllowSentence', 'beeAllowOrigin', 'hideKeyboardSuggestions'];
 
 // ---------- save status ("Saving…", "Saved", or a problem) ----------
 let hideTimer = null;

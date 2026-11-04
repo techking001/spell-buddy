@@ -8,6 +8,7 @@ export const DEFAULT_SETTINGS = {
   beeAllowMeaning: true,
   beeAllowSentence: true,
   beeAllowOrigin: true,
+  hideKeyboardSuggestions: false, // optional: ask the keyboard not to show word suggestions
 };
 const MAX_SESSIONS_KEPT = 50;
 
