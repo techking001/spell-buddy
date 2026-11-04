@@ -3,6 +3,7 @@ import { watchProgressBar, ensureStyles, showToast } from './ui.js';
 import { onSpeechNotice, isSpeechSupported, speak } from './pronunciation.js';
 import { maybeStartTour, resumeTour } from './tour.js';
 import { protectSpellingInputs } from './spelling-input.js';
+import { mountKeyboards } from './keyboard.js';
 
 // Each part is isolated, so one failing never stops the others.
 function safely(label, fn) {
@@ -30,6 +31,7 @@ safely('navigation', renderNavigation);
 safely('progress bar', watchProgressBar);
 safely('listen buttons', wireListenButtons);
 safely('spelling boxes', protectSpellingInputs); // no autocorrect, spellcheck or suggestions hints on answer boxes
+safely('keyboard', mountKeyboards); // the on-screen keyboard, on touch screens only (must run after the line above)
 // Messages about voice problems (backup voice in use, voice could not play) appear on every page.
 safely('voice messages', () => onSpeechNotice(({ message }) => showToast(message)));
 safely('walkthrough', async () => {

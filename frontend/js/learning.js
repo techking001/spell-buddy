@@ -121,6 +121,7 @@ $('backBtn').addEventListener('click', () => {
 $('prevBtn').addEventListener('click', () => openWord(position - 1));
 $('nextBtn').addEventListener('click', () => openWord(position + 1));
 $('hearWord').addEventListener('click', () => speech.speak(speech.phrases.word(visible[position])));
+$('hearTry').addEventListener('click', () => speech.speak(speech.phrases.word(visible[position]))); // next to the answer box on phones
 $('hearMeaning').addEventListener('click', () => speech.speak(speech.phrases.meaning(visible[position])));
 $('hearSentence').addEventListener('click', () => speech.speak(speech.phrases.sentence(visible[position])));
 $('hearOrigin').addEventListener('click', () => speech.speak(speech.phrases.origin(visible[position])));

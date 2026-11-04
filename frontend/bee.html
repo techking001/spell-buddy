@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/ui2.css">
+  <link rel="stylesheet" href="css/keyboard.css">
 </head>
 <body>
 <header id="site-header" class="site-header"></header>
@@ -68,6 +69,7 @@
   </section>
 
   <section id="play" class="card" hidden>
+    <div class="play-stack">
     <div class="session-top">
       <a class="back" href="index.html">
         <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#arrow-left"/></svg>
@@ -100,10 +102,12 @@
     <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
     <div id="correction" class="correction" tabindex="-1" aria-live="polite" hidden></div>
     <p id="compLine" class="comp-line" role="status" aria-live="polite" hidden></p>
+    <div id="kbHost" class="kb" data-keyboard-input="answer" data-keyboard-action="actionBtn" hidden></div>
     <button id="actionBtn" class="btn primary big" type="button">
       <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#check"/></svg>
       <span>Submit</span>
     </button>
+    </div>
   </section>
 
   <section id="done" class="card center" hidden>

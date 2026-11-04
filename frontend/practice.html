@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/ui2.css">
+  <link rel="stylesheet" href="css/keyboard.css">
 </head>
 <body>
 <header id="site-header" class="site-header"></header>
@@ -56,6 +57,7 @@
   </section>
 
   <section id="play" class="card" hidden>
+    <div class="play-stack">
     <div class="session-top">
       <button id="endBtn" class="btn small ghost" type="button">
         <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#x-circle"/></svg>
@@ -86,6 +88,7 @@
     <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
 
     <div id="correction" class="correction" tabindex="-1" aria-live="polite" hidden></div>
+    <div id="kbHost" class="kb" data-keyboard-input="answer" data-keyboard-action="actionBtn" hidden></div>
 
     <button id="actionBtn" class="btn primary big" type="button">
       <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#check"/></svg>
@@ -95,6 +98,7 @@
       <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#lightbulb"/></svg>
       <span>Listen carefully and type the word exactly as you hear it.</span>
     </p>
+    </div>
   </section>
 
   <section id="done" class="card center" hidden>

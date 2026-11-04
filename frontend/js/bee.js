@@ -211,11 +211,13 @@ function updateRepeatButton() {
   const max = settings.beeMaxRepeats;
   if (!max) {
     setButton($('hearBtn'), 'volume', 'Hear the word again');
+    delete $('hearBtn').dataset.left;
     $('hearBtn').disabled = false;
     return;
   }
   const left = Math.max(0, max - repeatsUsed);
   setButton($('hearBtn'), 'volume', `Hear the word again (${left} left)`);
+  $('hearBtn').dataset.left = String(left); // shown as a small badge on phones, where the button is just an icon
   $('hearBtn').disabled = left <= 0;
 }
 
