@@ -1,3 +1,4 @@
+import { applyTheme } from './theme.js';
 import { renderNavigation } from './navigation.js';
 import { watchProgressBar, ensureStyles, showToast } from './ui.js';
 import { onSpeechNotice, isSpeechSupported, speak } from './pronunciation.js';
@@ -26,6 +27,7 @@ function wireListenButtons() {
   });
 }
 
+safely('theme', applyTheme);
 safely('styles', ensureStyles);
 safely('navigation', renderNavigation);
 safely('progress bar', watchProgressBar);

@@ -1,5 +1,6 @@
 const KEYS = { progress: 'sb_progress', settings: 'sb_settings', tour: 'sb_tour' };
 export const DEFAULT_SETTINGS = {
+  theme: 'system',
   voiceName: '',
   speechRate: 0.85,
   beeWordCount: 10,

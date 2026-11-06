@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,87 +11,135 @@
   <link rel="stylesheet" href="css/bee.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/theme.css">
 </head>
+
 <body>
-<header id="site-header" class="site-header"></header>
-<main class="container">
-  <h1 class="with-ico">
-    <span class="h-badge c-purple" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#sliders"/></svg></span>
-    <span>Settings</span>
-  </h1>
-  <p class="muted">Your changes save automatically.</p>
+  <header id="site-header" class="site-header"></header>
+  <main class="container">
+    <h1 class="with-ico">
+      <span class="h-badge c-purple" aria-hidden="true"><svg class="icon" focusable="false">
+          <use href="assets/icons.svg#sliders" />
+        </svg></span>
+      <span>Settings</span>
+    </h1>
+    <p class="muted">Your changes save automatically.</p>
 
-  <form id="form">
-    <section class="card">
-      <h2 class="with-ico">
-        <span class="h-badge c-blue" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#volume"/></svg></span>
-        <span>Voice and pronunciation</span>
+    <form id="form">
+      <section class="card">
+        <h2 class="with-ico">
+          <span class="h-badge c-purple" aria-hidden="true">
+            <svg class="icon" focusable="false">
+              <use href="assets/icons.svg#sun" />
+            </svg>
+          </span>
+          <span>Appearance</span>
+        </h2>
+
+        <p class="field-hint">
+          Choose how Spell Buddy looks on your device.
+        </p>
+
+        <label class="field" for="theme">App theme</label>
+
+        <select id="theme" class="select-input">
+          <option value="system">Automatic (follow device)</option>
+          <option value="light">Light mode</option>
+          <option value="dark">Dark mode</option>
+        </select>
+
+        <p class="field-hint">
+          Automatic follows your device's light or dark appearance setting.
+        </p>
+      </section>
+      <section class="card">
+        <h2 class="with-ico">
+          <span class="h-badge c-blue" aria-hidden="true"><svg class="icon" focusable="false">
+              <use href="assets/icons.svg#volume" />
+            </svg></span>
+          <span>Voice and pronunciation</span>
+        </h2>
+        <p id="speechWarning" class="warn" hidden>This browser cannot speak words aloud, so voice settings are
+          unavailable.</p>
+        <label class="field" for="voice">Voice</label>
+        <select id="voice" class="select-input">
+          <option value="">Automatic</option>
+        </select>
+        <p id="voiceHint" class="field-hint" hidden></p>
+
+        <label class="field" for="rate">Speaking speed: <output id="rateOut">0.85×</output></label>
+        <input id="rate" class="range" type="range" min="0.5" max="1.2" step="0.05" value="0.85">
+
+        <button id="testBtn" class="btn big" type="button">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="assets/icons.svg#volume" />
+          </svg>
+          <span>Test voice</span>
+        </button>
+      </section>
+
+      <section class="card">
+        <h2 class="with-ico">
+          <span class="h-badge c-purple" aria-hidden="true"><svg class="icon" focusable="false">
+              <use href="assets/icons.svg#type" />
+            </svg></span>
+          <span>Typing</span>
+        </h2>
+        <label class="check-row"><input id="hideKeyboardSuggestions" type="checkbox"> Hide word suggestions on my
+          keyboard</label>
+        <p class="field-hint">Turn this on if your keyboard shows the answer while you type. Some keys, like the @ key,
+          may look a little different.</p>
+      </section>
+
+      <section class="card">
+        <h2 class="with-ico">
+          <span class="h-badge c-yellow" aria-hidden="true"><svg class="icon" focusable="false">
+              <use href="assets/icons.svg#trophy" />
+            </svg></span>
+          <span>Spelling Bee rules</span>
+        </h2>
+        <label class="field" for="beeWordCount">Words per round (1 to 30)</label>
+        <input id="beeWordCount" class="num-input" type="number" min="1" max="30" inputmode="numeric">
+
+        <label class="field" for="beeTimerSeconds">Seconds per word (0 = no timer)</label>
+        <input id="beeTimerSeconds" class="num-input" type="number" min="0" max="300" inputmode="numeric">
+
+        <label class="field" for="beeMaxRepeats">Times the word can be repeated (0 = unlimited)</label>
+        <input id="beeMaxRepeats" class="num-input" type="number" min="0" max="10" inputmode="numeric">
+
+        <p class="field">Help allowed during a Bee round</p>
+        <label class="check-row"><input id="beeAllowMeaning" type="checkbox"> Meaning</label>
+        <label class="check-row"><input id="beeAllowSentence" type="checkbox"> Example sentence</label>
+        <label class="check-row"><input id="beeAllowOrigin" type="checkbox"> Word origin (when verified)</label>
+      </section>
+
+      <button id="resetBtn" class="btn big ghost" type="button">Reset to defaults</button>
+    </form>
+
+    <section class="card help-card" aria-labelledby="helpTitle">
+      <h2 id="helpTitle" class="with-ico">
+        <span class="h-badge c-green" aria-hidden="true"><svg class="icon" focusable="false">
+            <use href="assets/icons.svg#info" />
+          </svg></span>
+        <span>Help</span>
       </h2>
-      <p id="speechWarning" class="warn" hidden>This browser cannot speak words aloud, so voice settings are unavailable.</p>
-      <label class="field" for="voice">Voice</label>
-      <select id="voice" class="select-input"><option value="">Automatic</option></select>
-      <p id="voiceHint" class="field-hint" hidden></p>
-
-      <label class="field" for="rate">Speaking speed: <output id="rateOut">0.85×</output></label>
-      <input id="rate" class="range" type="range" min="0.5" max="1.2" step="0.05" value="0.85">
-
-      <button id="testBtn" class="btn big" type="button">
-        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#volume"/></svg>
-        <span>Test voice</span>
+      <p class="muted">New here, or need a reminder of what each part does?</p>
+      <button id="tourBtn" class="btn big" type="button">
+        <svg class="icon" aria-hidden="true" focusable="false">
+          <use href="assets/icons.svg#play" />
+        </svg>
+        <span>Show the walkthrough again</span>
       </button>
     </section>
+  </main>
 
-    <section class="card">
-      <h2 class="with-ico">
-        <span class="h-badge c-purple" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#type"/></svg></span>
-        <span>Typing</span>
-      </h2>
-      <label class="check-row"><input id="hideKeyboardSuggestions" type="checkbox"> Hide word suggestions on my keyboard</label>
-      <p class="field-hint">Turn this on if your keyboard shows the answer while you type. Some keys, like the @ key, may look a little different.</p>
-    </section>
+  <div id="saveBar" class="save-bar idle">
+    <span id="saveStatus" role="status" aria-live="polite"></span>
+    <button id="retrySave" class="btn small" type="button" hidden>Try again</button>
+  </div>
 
-    <section class="card">
-      <h2 class="with-ico">
-        <span class="h-badge c-yellow" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#trophy"/></svg></span>
-        <span>Spelling Bee rules</span>
-      </h2>
-      <label class="field" for="beeWordCount">Words per round (1 to 30)</label>
-      <input id="beeWordCount" class="num-input" type="number" min="1" max="30" inputmode="numeric">
-
-      <label class="field" for="beeTimerSeconds">Seconds per word (0 = no timer)</label>
-      <input id="beeTimerSeconds" class="num-input" type="number" min="0" max="300" inputmode="numeric">
-
-      <label class="field" for="beeMaxRepeats">Times the word can be repeated (0 = unlimited)</label>
-      <input id="beeMaxRepeats" class="num-input" type="number" min="0" max="10" inputmode="numeric">
-
-      <p class="field">Help allowed during a Bee round</p>
-      <label class="check-row"><input id="beeAllowMeaning" type="checkbox"> Meaning</label>
-      <label class="check-row"><input id="beeAllowSentence" type="checkbox"> Example sentence</label>
-      <label class="check-row"><input id="beeAllowOrigin" type="checkbox"> Word origin (when verified)</label>
-    </section>
-
-    <button id="resetBtn" class="btn big ghost" type="button">Reset to defaults</button>
-  </form>
-
-  <section class="card help-card" aria-labelledby="helpTitle">
-    <h2 id="helpTitle" class="with-ico">
-      <span class="h-badge c-green" aria-hidden="true"><svg class="icon" focusable="false"><use href="assets/icons.svg#info"/></svg></span>
-      <span>Help</span>
-    </h2>
-    <p class="muted">New here, or need a reminder of what each part does?</p>
-    <button id="tourBtn" class="btn big" type="button">
-      <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#play"/></svg>
-      <span>Show the walkthrough again</span>
-    </button>
-  </section>
-</main>
-
-<div id="saveBar" class="save-bar idle">
-  <span id="saveStatus" role="status" aria-live="polite"></span>
-  <button id="retrySave" class="btn small" type="button" hidden>Try again</button>
-</div>
-
-<script type="module" src="js/app.js"></script>
-<script type="module" src="js/settings.js"></script>
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/settings.js"></script>
 </body>
+
 </html>

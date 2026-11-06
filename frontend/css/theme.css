@@ -1,0 +1,423 @@
+
+/* ==========================================
+   SPELL BUDDY THEME SYSTEM
+   Light and dark appearance
+========================================== */
+
+/* LIGHT THEME — DEFAULT */
+
+:root {
+  color-scheme: light;
+
+  --page-bg: #f4f7ff;
+  --surface: #ffffff;
+  --surface-alt: #f2f4ff;
+  --ink: #1e1b4b;
+  --muted: #555a82;
+  --line: #d5dcf5;
+  --card: #ffffff;
+
+  --purple-soft: #eeeaff;
+  --yellow-soft: #fff3c4;
+
+  --good-soft: #dcfce7;
+  --bad-soft: #ffedd5;
+
+  --shadow: 0 6px 18px rgba(30, 27, 75, .08);
+}
+
+/* DARK THEME */
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --page-bg: #111323;
+  --surface: #1c2035;
+  --surface-alt: #262b43;
+  --ink: #f1f1ff;
+  --muted: #b3b8d3;
+  --line: #3b4261;
+  --card: #1c2035;
+
+  --purple-soft: #332b58;
+  --yellow-soft: #44391e;
+
+  --good-soft: #183c30;
+  --bad-soft: #493025;
+
+  --good: #6ee7a2;
+  --bad: #ffbd91;
+  --warn: #ffd477;
+
+  --shadow: 0 6px 20px rgba(0, 0, 0, .22);
+}
+
+/* PAGE BACKGROUND */
+
+body {
+  background: var(--page-bg);
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] body {
+  background: linear-gradient(180deg, #111323 0%, #171a2c 100%);
+  background-attachment: fixed;
+}
+
+/* TEXT */
+
+:root[data-theme="dark"] .muted,
+:root[data-theme="dark"] .field-hint {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] a {
+  color: #b7a9ff;
+}
+
+/* HEADER AND NAVIGATION */
+
+:root[data-theme="dark"] .site-header {
+  background: rgba(24, 28, 47, .97);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .brand,
+:root[data-theme="dark"] .nav-menu a {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .nav-menu {
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .nav-menu a {
+  background: var(--surface-alt);
+}
+
+:root[data-theme="dark"] .nav-menu a[aria-current="page"] {
+  background: var(--purple);
+  color: #fff;
+}
+
+:root[data-theme="dark"] .nav-toggle {
+  background: var(--purple-soft);
+  color: #d8d0ff;
+}
+
+:root[data-theme="dark"] .nav-backdrop {
+  background: rgba(0, 0, 0, .65);
+}
+
+/* CARDS AND PANELS */
+
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .panel,
+:root[data-theme="dark"] .modal,
+:root[data-theme="dark"] .dialog {
+  background: var(--card);
+  color: var(--ink);
+  border-color: var(--line);
+  box-shadow: var(--shadow);
+}
+
+/* BUTTONS */
+
+:root[data-theme="dark"] .btn:not(.primary):not(.accent) {
+  background: var(--surface-alt);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .btn.ghost {
+  background: transparent;
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .btn.primary {
+  color: #fff;
+}
+
+:root[data-theme="dark"] .btn.accent {
+  color: #302300;
+}
+
+/* INPUTS */
+
+:root[data-theme="dark"] input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+:root[data-theme="dark"] textarea,
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] .answer,
+:root[data-theme="dark"] .num-input,
+:root[data-theme="dark"] .select-input {
+  background: #252a42;
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] input::placeholder,
+:root[data-theme="dark"] textarea::placeholder {
+  color: #a0a7c5;
+}
+
+:root[data-theme="dark"] input[type="checkbox"],
+:root[data-theme="dark"] input[type="radio"] {
+  accent-color: #a99aff;
+}
+
+:root[data-theme="dark"] option {
+  background: var(--surface);
+  color: var(--ink);
+}
+
+/* CHIPS AND SMALL LABELS */
+
+:root[data-theme="dark"] .chip span,
+:root[data-theme="dark"] .pill {
+  background: var(--purple-soft);
+  color: #d8d0ff;
+  border-color: var(--line);
+}
+
+/* LEARNING AND PRACTICE */
+
+:root[data-theme="dark"] .word-card,
+:root[data-theme="dark"] .learn-card,
+:root[data-theme="dark"] .practice-card,
+:root[data-theme="dark"] .question-card,
+:root[data-theme="dark"] .bee-card {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .correct,
+:root[data-theme="dark"] .feedback.correct {
+  background: var(--good-soft);
+  color: var(--good);
+}
+
+:root[data-theme="dark"] .incorrect,
+:root[data-theme="dark"] .feedback.incorrect {
+  background: var(--bad-soft);
+  color: var(--bad);
+}
+
+/* PROGRESS */
+
+:root[data-theme="dark"] .bar {
+  background: #343a55;
+}
+
+:root[data-theme="dark"] .progress-card {
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+/* KEYBOARD */
+
+:root[data-theme="dark"] .custom-keyboard,
+:root[data-theme="dark"] .keyboard,
+:root[data-theme="dark"] .keyboard-container {
+  background: #191d30;
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .keyboard button,
+:root[data-theme="dark"] .key {
+  background: #303650;
+  color: #fff;
+  border-color: #454d6d;
+}
+
+:root[data-theme="dark"] .keyboard button:active,
+:root[data-theme="dark"] .key:active {
+  background: var(--purple);
+}
+
+/* NOTIFICATIONS AND WALKTHROUGH */
+
+:root[data-theme="dark"] .toast,
+:root[data-theme="dark"] .tour,
+:root[data-theme="dark"] .save-bar {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+/* ICON BACKGROUNDS */
+
+:root[data-theme="dark"] .h-badge,
+:root[data-theme="dark"] .ico {
+  background: var(--surface-alt);
+}
+
+/* FOCUS */
+
+:root[data-theme="dark"] :focus-visible {
+  outline-color: #b8aaff;
+}
+
+/* SMOOTH THEME TRANSITION */
+
+body,
+.site-header,
+.card,
+.btn,
+input,
+textarea,
+select,
+.nav-menu {
+  transition:
+    background-color .2s ease,
+    color .2s ease,
+    border-color .2s ease;
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  body,
+  .site-header,
+  .card,
+  .btn,
+  input,
+  textarea,
+  select,
+  .nav-menu {
+    transition: none;
+  }
+}
+
+
+
+/* ==========================================
+   SPELL BUDDY — DARK MODE SURFACE CORRECTION
+   Fixes hardcoded light backgrounds and text.
+========================================== */
+
+:root[data-theme="dark"] {
+
+  /* Shared surface colours */
+  --light-surface: #252a42;
+  --light-surface-alt: #2b304a;
+  --light-text: #f1f1ff;
+}
+
+/* HOME PAGE AND STATISTICS */
+
+:root[data-theme="dark"] .strip-stats div,
+:root[data-theme="dark"] .stat,
+:root[data-theme="dark"] .mini,
+:root[data-theme="dark"] .info {
+  background: var(--light-surface) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
+
+:root[data-theme="dark"] .strip-stats dt {
+  color: var(--muted) !important;
+}
+
+:root[data-theme="dark"] .strip-stats dd {
+  color: var(--light-text) !important;
+}
+
+/* NAVIGATION */
+
+:root[data-theme="dark"] .nav-menu {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+}
+
+:root[data-theme="dark"] .nav-menu a:not([aria-current="page"]) {
+  background: var(--light-surface) !important;
+  color: var(--ink) !important;
+}
+
+:root[data-theme="dark"] .nav-menu a .ico {
+  background: var(--light-surface-alt) !important;
+}
+
+/* BUTTONS AND SELECTIONS */
+
+:root[data-theme="dark"] .btn:not(.primary):not(.accent),
+:root[data-theme="dark"] .tile-go,
+:root[data-theme="dark"] .chip span,
+:root[data-theme="dark"] .opt-face {
+  background: var(--light-surface) !important;
+  color: var(--ink) !important;
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .chip input:checked + span,
+:root[data-theme="dark"] .opt input:checked + .opt-face {
+  background: var(--purple) !important;
+  color: #fff !important;
+  border-color: var(--purple-dark) !important;
+}
+
+/* LEARNING PAGE */
+
+:root[data-theme="dark"] .syl {
+  background: var(--light-surface) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
+
+:root[data-theme="dark"] .word-btn {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
+
+/* PRACTICE AND BEE */
+
+:root[data-theme="dark"] .answer,
+:root[data-theme="dark"] .num-input,
+:root[data-theme="dark"] .select-input {
+  background: var(--light-surface) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
+
+:root[data-theme="dark"] .answer:disabled {
+  background: var(--light-surface-alt) !important;
+  color: var(--muted) !important;
+}
+
+/* CUSTOM KEYBOARD */
+
+:root[data-theme="dark"] .kb-key {
+  background: var(--light-surface-alt) !important;
+  color: var(--light-text) !important;
+  border-color: var(--line) !important;
+}
+
+/* SETTINGS AND WALKTHROUGH */
+
+:root[data-theme="dark"] .save-bar,
+:root[data-theme="dark"] .tour {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
+
+/* ENSURE FORM LABELS REMAIN READABLE */
+
+:root[data-theme="dark"] label,
+:root[data-theme="dark"] legend {
+  color: var(--ink);
+}
+
+/* Preserve intentionally coloured buttons and indicators */
+:root[data-theme="dark"] .btn.primary,
+:root[data-theme="dark"] .btn.accent,
+:root[data-theme="dark"] .round-btn,
+:root[data-theme="dark"] .badge,
+:root[data-theme="dark"] .act-badge,
+:root[data-theme="dark"] .kb-enter {
+  color: #fff !important;
+}
+

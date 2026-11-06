@@ -1,3 +1,4 @@
+import { applyTheme } from './theme.js';
 import { getSettings, saveSettingsPatch, previewSettings, resetSettings, DEFAULT_SETTINGS } from './storage.js';
 import * as speech from './pronunciation.js';
 import { icon } from './ui.js';
@@ -47,6 +48,7 @@ function readVoiceAndSpeed() {
 }
 
 function fillForm(s) {
+  $('theme').value = s.theme || 'system';
   $('rate').value = s.speechRate;
   $('rateOut').textContent = `${Number(s.speechRate).toFixed(2)}×`;
   Object.keys(NUMBER_FIELDS).forEach((id) => ($(id).value = s[id]));
@@ -98,6 +100,16 @@ speech.onVoicesReady(fillVoices);
 fillForm(getSettings());
 
 // ---------- every change saves by itself ----------
+$('theme').addEventListener('change', () => {
+  const selectedTheme = $('theme').value;
+
+  applyTheme(selectedTheme);
+
+  saver.save(
+    { theme: selectedTheme },
+    { immediate: true }
+  );
+});
 $('form').addEventListener('submit', (e) => e.preventDefault()); // pressing Enter must not reload the page
 
 $('voice').addEventListener('change', () => saver.save({ voiceName: $('voice').value }, { immediate: true }));
